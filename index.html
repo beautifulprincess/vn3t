@@ -15,9 +15,11 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/countdown.js"></script>
 </head>
 <body>
-<header>
+<header class="onTop">
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -30,7 +32,7 @@
 				<a class="nav-link" href="#home">HOME</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#overview">OVERVIEW</a>
+				<a class="nav-link" href="#problematic">OVERVIEW</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#faq">FAQ</a>
@@ -69,15 +71,15 @@
 <section id="problematic">
 	<h1>PROBLEMATIC</h1>
 	<div class="row">
-		<div class="col col-sm-4">
+		<div class="col col-md-4">
 			<div class="prob-icon icon-privacy"></div>
 			<p>PRIVACY</p>
 		</div>
-		<div class="col col-sm-4">
+		<div class="col col-md-4">
 			<div class="prob-icon icon-property"></div>
 			<p>INTELLECTURAL<br>PROPERTY</p>
 		</div>
-		<div class="col col-sm-4">
+		<div class="col col-md-4">
 			<div class="prob-icon icon-security"></div>
 			<p>SECURITY</p>
 		</div>
@@ -106,22 +108,22 @@
 		</div>
 	</div>
 </section>
-<section>
+<section id="countdown">
 <div id="countdown-change-js">
 <div class="countdown-col">
-<div class="countdown-num">05</div>
+<div class="countdown-num countdown-days">0</div>
 <div class="countdown-info">Days</div>
 </div>
 <div class="countdown-col">
-<div class="countdown-num">04</div>
+<div class="countdown-num countdown-hours">0</div>
 <div class="countdown-info">Hours</div>
 </div>
 <div class="countdown-col">
-<div class="countdown-num">27</div>
+<div class="countdown-num countdown-minutes">0</div>
 <div class="countdown-info">Minutes</div>
 </div>
 <div class="countdown-col">
-<div class="countdown-num">09</div>
+<div class="countdown-num countdown-seconds">0</div>
 <div class="countdown-info">Seconds</div>
 </div>
 </div>
