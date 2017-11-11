@@ -76,6 +76,7 @@ section{
 
 section h1{
 	font-size: 40px;
+	font-weight: bold;
 	margin: 40px;
 }
 
@@ -97,11 +98,20 @@ nav.bg-faded{
 {
 	color: rgb(17, 23, 133);
 }
+.navbar-light .navbar-nav .active>.nav-link{
+	text-decoration: underline;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #fff;
+}
 
-.navbar-toggleable-md .navbar-collapse
+@media (min-width: 992px)
 {
-	display: block !important;
-	float: right;
+	.navbar-toggleable-md .navbar-collapse
+	{
+		display: block !important;
+		float: right;
+	}
 }
 
 #home .home-content{
