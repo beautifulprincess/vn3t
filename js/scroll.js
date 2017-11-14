@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var cur_scroll_top = 0;
 
-	$(window).scroll(function(){
+	var scroll_processer = function(){
 		var header_height = 90;
 		cur_scroll_top = $(window).scrollTop();
 		if (cur_scroll_top == 0)
@@ -29,7 +29,10 @@ $(document).ready(function(){
 				$(this).addClass("active");
 			}
 		});
-	});
+	};
+	$(window).scroll(scroll_processer);
+	scroll_processer();
+
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
 		let header_height = 60;

@@ -10,6 +10,7 @@
 	<link rel="bookmark" href="images/favicon.ico"/>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="css/countdown.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -18,6 +19,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/countdown.js"></script>
+	<script src="js/main.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="js/piechart.js"></script>
 </head>
 <body>
 <header class="onTop">
@@ -39,7 +45,7 @@
 				<a class="nav-link" href="#faq">FAQ</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#loadmap">LOADMAP</a>
+				<a class="nav-link" href="#roadmap">ROADMAP</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#team">TEAM</a>
@@ -63,10 +69,10 @@
 </div>
 <div class="color-background"></div>
 <div class="home-content">
-	<h1>Lorem ipsum dolor sit amet</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+	<h1>Decentralized Marketplace For Global Data Network</h1>
+	<p>VN3T is a two-way marketplace designed for an ecosystem of data and algorithm stakeholders.</p>
 	<div class="home-icon"></div>
-	<div class="home-btn-div">BUTTON</div>
+	<div class="home-btn-div">PARTICIPATE NOW!</div>
 </div>
 </section>
 <section id="problematic">
@@ -89,25 +95,81 @@
 	<p class="description">The monopoly of giants on structured data</p>
 </section>
 <section id="technology">
-	<h1>TECHNOLOGY: GRAPH</h1>
+	<h1>TECHNOLOGY</h1>
 	<div class="row">
 		<div class="col col-sm-6">
 		<div class="tech-block">
 			<div class="tech-icon icon-gpu"></div>
 			<p class="tech-title">GPU POOLING &amp;<br>PROOF-OF-ALLOCATION</p>
-			<p class="tech-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-			<p class="tech-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			<p class="tech-content">All mining schemes are made to enable the creation of a “supercomputer” composed of clusters of virtualized environments powered by cooperative GPU pooling, created to handle specific calculations using specifications given by GPU power buyers.</p>
+			<p class="tech-content">The proof-of-allocation serves as a method for determining the quantity of processing power allocated to a single virtualized environment.</p>
 		</div>
 		</div>
 		<div class="col col-sm-6">
 		<div class="tech-block">
 			<div class="tech-icon icon-data"></div>
 			<p class="tech-title">DATA ABSTRACTION<br>AND KPI'S</p>
-			<p class="tech-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-			<p class="tech-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			<p class="tech-content">VN3T makes this structuring and monetizing process easily available and at an attractive price, using a Data Visualization Tool, which enables the data provider to tag the key performance indicator (KPI) that can be used and propose the best statistic calculation layer that can be extracted.</p>
 		</div>
 		</div>
 	</div>
+</section>
+<section id="ecosystem">
+	<h1>ECOSYSTEM</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+	<img class="ecosystem-image" src="images/ecosystem.png">
+	<h1>ICO DETAILS</h1>
+	<p>The VC01n Pre-Sale runs from December 1st until December 22nd 2017.<br>The Public Sale will begin February 1st 2018. </p>
+
+<div id="pie-container"></div>
+	<div>
+		<p><span class="white">Target:</span> <span class="black">$25 million</span> <span class="white">Supply:</span> <span class="black">3.5 billion tokens</span></p>
+		<table align=center>
+			<tr><td><span class="ico-percent-color color1"></span></td><td><span class="white">72% Crowd Sale:</span> <span class="black">2 500 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color2"></span></td><td><span class="white">7% Affliated:</span> <span class="black">250 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color3"></span></td><td><span class="white">14% Retained by VN3T:</span> <span class="black">500 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color4"></span></td><td><span class="white">7% Reward Bounties:</span> <span class="black">250 000 000</span></td></tr>
+		</table>
+		<p><span class="white">Purchase method:</span> <span class="black">USD, ETH, BTC, ZCash, DashCoin</span></p>
+	</div>
+</section>
+<section id="faq">
+	<h1>VN3T - FAQ</h1>
+	<div class="faq-div">
+		<div class="faq-question-div">
+			<p class="faq-question" for="1">ICO Instruction</p>
+		</div>
+		<div class="faq-answer answer1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<h4>Common faq</h4>
+		<div class="faq-question-div">
+			<p class="faq-question" for="2">Question number one</p>
+		</div>
+		<div class="faq-answer answer2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div class="faq-question-div">
+			<p class="faq-question" for="3">Question number two</p>
+		</div>
+		<div class="faq-answer answer3">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div class="faq-question-div">
+			<p class="faq-question opened" for="4">Question number three</p>
+		</div>
+		<div class="faq-answer answer4 opened">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+	</div>
+</section>
+<section id="roadmap">
+	<h1>ROADMAP</h1>
+	<img src="images/roadmap.png">
 </section>
 <section id="countdown">
 <div class="countdown-container main-example" id="countdown-counter">
@@ -153,6 +215,7 @@
 <a href="https://centra.tech/#home" target="_blank">https://centra.tech/#home</a><br>
 <a href="https://www.wetrust.io/" target="_blank">https://www.wetrust.io/</a><br>
 <a href="https://www.dentacoin.com/" target="_blank">https://www.dentacoin.com/</a><br>
+<a href="https://turinginc.io/" target="_blank">https://turinginc.io/</a>
 </div>
 </section>
 

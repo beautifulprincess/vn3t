@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!--<script type="text/javascript" src="https://www.fusioncharts.com/lib/fcassets/3.12.2/fusioncharts.js"></script>
+<script type="text/javascript" src="https://www.fusioncharts.com/lib/fcassets/3.12.2/themes/fusioncharts.theme.fint.js"></script>-->
+<script type="text/javascript" src="fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+var jsonDataSource = {
+    "chart": {
+//        "caption": "Age profile of website visitors",
+//        "subcaption": "Last Year",
+        "startingangle": 120,
+        "showlabels": 0,
+        "showlegend": 1,
+        "enablemultislicing": 0,
+        "slicingdistance": 15,
+        "showpercentvalues": 1,
+        "showpercentintooltip": 0,
+//        "plottooltext": "Age group : $label Total visit : $datavalue",
+        "theme": "fint"
+    },
+    "data": [
+        {
+            "label": "Teenage",
+            "value": "1250400"
+        },
+        {
+            "label": "Adult",
+            "value": "1463300"
+        },
+        {
+            "label": "Mid-age",
+            "value": "1050700"
+        },
+        {
+            "label": "Senior",
+            "value": "491000"
+        }
+    ]
+};
+  FusionCharts.ready(function(){
+    var revenueChart = new FusionCharts({
+        "type": "pie3d",
+        "renderAt": "chartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource": jsonDataSource
+    });
+    revenueChart.render();
+  });
+</script>
+</head>
+<body>
+  <div id="chartContainer"></div>
+</body>
+</html>

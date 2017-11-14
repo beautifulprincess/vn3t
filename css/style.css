@@ -1,11 +1,15 @@
 @font-face{
 	font-family: 'Roboto';
+	src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: 'Roboto-Regular';
 	src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 body{
   padding: 0;
   margin: 0;
-  color: rgb(17, 23, 133);
+  color: rgb(41, 43, 114);
   font-family: Roboto;
 }
 section{
@@ -61,7 +65,7 @@ header{
 	position: fixed;
 	width: 100%;
 	height: 60px;
-	background: rgb(160, 170, 240);
+	background: rgb(85, 100, 180);/*rgb(160, 170, 240);*/
 	border-bottom: 2px solid #fff;
 	padding: 0 calc(50% - 496px);
 	z-index: 999;
@@ -83,7 +87,7 @@ section h1{
 	font-size: 40px;
 	font-weight: bold;
 	margin: 40px;
-	letter-spacing: 8px;
+	letter-spacing: 6px;
 }
 
 #header-logo img{
@@ -117,13 +121,24 @@ header.onTop .navbar-toggleable-md .navbar-nav{
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link
 {
-	color: rgb(17, 23, 133);
+	color: #fff;/*rgb(41, 43, 114);*/
 	transition-duration: 0.3s;
 }
 .navbar-light .navbar-nav .active>.nav-link{
-	text-decoration: underline;
-	color: rgb(226, 214, 23);
+/*	text-decoration: underline;*/
+	color: #fff;/*rgb(226, 214, 23);*/
 	font-weight: bold;
+	position: relative;
+}
+.navbar-light .navbar-nav .active>.nav-link:after
+{
+	content: '';
+	position: absolute;
+	width: calc(100% - 10px);
+	height: 2px;
+	background: rgb(41, 43, 114);
+	bottom: 7px;
+	left: 5px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
 	color: #fff;
@@ -137,9 +152,17 @@ header.onTop .navbar-toggleable-md .navbar-nav{
 	top: 10px;
 	transition-duration: 0.3s;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+.navbar-light .navbar-nav .nav-link:focus
 {
-	color: rgb(17, 23, 133);
+	color: #fff;/*rgb(41, 43, 114);*/
+}
+.navbar-light .navbar-nav .active>.nav-link:focus
+{
+	color: #fff;/*rgb(226, 214, 23);*/
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+	color: #fff;/*rgb(226, 214, 23);*/
 }
 header.onTop .navbar-toggler-right{
 	top: 25px;
@@ -158,21 +181,25 @@ header.onTop .navbar-toggler-right{
 	text-transform: uppercase;
 }
 #home p{
-	color: #000;
+	color: #fff;
 	font-size: 25px;
 	margin-bottom: 50px;
+	letter-spacing: 3px;
 }
 #home .home-icon{
 	margin: 0 auto;
-	border-radius: 50%;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-	background-image: url(../images/icons/coin.png);
-	width: 357px;
-	height: 357px;
+/*	border-radius: 50%;*/
+/*	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+	background-image: url(../images/logo2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 370px;
+	height: 326px;
 	background-color: transparent;
 	position: relative;
 }
-#home .home-icon:before{
+/*#home .home-icon:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -182,9 +209,9 @@ header.onTop .navbar-toggler-right{
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 50%;
 	z-index: -1;
-}
+}*/
 #home .home-btn-div{
-	background: rgb(17, 23, 133);
+	background: rgb(41, 43, 114);
 	margin: 40px auto;
 	width: 300px;
 	height: 60px;
@@ -204,7 +231,7 @@ header.onTop .navbar-toggler-right{
 	position: relative;
 	width: 210px;
 	height: 210px;
-	border: 2px dashed rgb(17, 23, 133);
+	/*border: 2px dashed rgb(41, 43, 114);*/
 	border-radius: 50%;
 	margin: 0 auto;
 	background-repeat: no-repeat;
@@ -216,13 +243,37 @@ header.onTop .navbar-toggler-right{
 	position: absolute;
 	width: 180px;
 	height: 180px;
-	top: 14px;
-	left: 14px;
-	border: 1px solid rgb(17, 23, 133);
+	top: 15px;
+	left: 15px;
+	border: 1px solid rgb(41, 43, 114);
 	border-radius: 50%;
 }
-.prob-icon:hover:before{
-	box-shadow: 0 0 10px rgba(17, 23, 133, 0.5);
+@keyframes spinning {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(3600deg);
+  }
+}
+.prob-icon:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px dashed rgb(41, 43, 114);
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+}
+.prob-icon:hover:after{
+  animation-duration: 500s;
+  animation-name: spinning;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+  /*animation-direction: alternate;*/
 }
 .icon-privacy{
 	background-image: url(../images/icons/problem-privacy.png);
@@ -237,6 +288,7 @@ header.onTop .navbar-toggler-right{
 	font-size: 35px;
 	margin-top: 30px;
 	margin-bottom: 0;
+	font-family: 'Roboto-Regular';
 }
 #problematic p.amp{
 	color: rgb(226, 214, 23);
@@ -256,21 +308,28 @@ header.onTop .navbar-toggler-right{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	z-index: 1;
 }
 #technology h1{
 	color: #fff;
 }
 #technology .row .col{
 	margin-bottom: 80px;
+	display: relative;
 }
 #technology .row .col .tech-block{
-	padding: 30px;
-	background-color: rgba(255, 255, 255, 0.5);
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 8px;
 	width: 90%;
+	height: 100%;
 }
 #technology .row .col:first-child .tech-block{
 	margin-left: 10%;
+}
+#technology .tech-block p:last-child{
+	margin-bottom: 0;
 }
 .tech-icon{
 	position: relative;
@@ -281,7 +340,7 @@ header.onTop .navbar-toggler-right{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 60%;
-	background-color: rgb(17, 23, 133);
+	background-color: rgb(41, 43, 114);
 	transition-duration: 0.1s;
 }
 .tech-icon:hover{
@@ -300,6 +359,125 @@ header.onTop .navbar-toggler-right{
 .tech-content{
 	font-size: 18px;
 	color: #000;
+	text-align: justify;
+}
+
+#ecosystem{
+	background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* Standard syntax */
+	padding-bottom: 40px;
+}
+#ecosystem p{
+	color: #000;
+	font-size: 25px;
+}
+#ecosystem img.ecosystem-image{
+	width: 100%;
+	max-width: 940px;
+}
+#ecosystem img.ecosystem-icodetails{
+	width: 100%;
+	max-width: 660px;
+}
+#pie-container{
+	height: 50vw;
+	width: 100%;
+	margin-top: -12vw;
+	margin-bottom: -10vw;
+}
+.white{color:#fff !important;}
+.black{color:#000 !important;}
+.ico-percent-color{
+	display: block;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #000;
+	margin-right: 10px;
+}
+.ico-percent-color.color1{
+	background: #000080;
+}
+.ico-percent-color.color2{
+	background: #333399;
+}
+.ico-percent-color.color3{
+	background: #3366ff;
+}
+.ico-percent-color.color4{
+	background: #6699cc;
+}
+#ecosystem table td{
+	text-align: left;
+	font-size: 24px;
+}
+
+#faq{
+	padding-bottom: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	z-index: 1;
+}
+#faq .faq-div{
+	text-align: left;
+}
+#faq .faq-question-div{
+	overflow: hidden;
+}
+#faq .faq-question{
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+	float: left;
+	font-size: 25px;
+	color: #000;
+	cursor: pointer;
+}
+#faq .faq-question:before{
+	content: "\f059";
+	position: absolute;
+	top: 3px;
+	left: 14px;
+	font: normal normal normal 30px/1 FontAwesome;
+	color: rgb(41, 43, 114);
+}
+#faq .faq-question:after{
+	content: "\f107";
+	position: absolute;
+	top: 3px;
+	right: 14px;
+	font: normal normal normal 30px/1 FontAwesome;
+	color: rgb(41, 43, 114);
+}
+#faq .faq-question.opened:after{
+	content: "\f106";
+}
+#faq .faq-answer{
+	transition-duration: 0.3s;
+	padding-bottom: 0px;
+	padding-left: 50px;
+	height: 0;
+	overflow: hidden;
+	font-size: 18px;
+}
+#faq .faq-answer.opened{
+	padding-bottom: 20px;
+	height: auto;
+}
+#roadmap{
+	background: rgb(110, 155, 205); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* Standard syntax */
+	padding-bottom: 40px;
+}
+#roadmap h1{
+	color: #fff;
+}
+#roadmap img{
+	width: 100%;
 }
 
 @media (min-width: 992px)
@@ -346,14 +524,13 @@ header.onTop .navbar-toggler-right{
 		margin-left: 5%;
 	}
 	#home .home-icon{
+		width: 185px;
+		height: 163px;
+	}
+	/*#home .home-icon:before{
 		width: 200px;
 		height: 200px;
-		background-size: 200px;
-	}
-	#home .home-icon:before{
-		width: 200px;
-		height: 200px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 48em) {
