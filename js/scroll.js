@@ -16,8 +16,12 @@ $(document).ready(function(){
 		var cur_section = sections[0];
 		for(var i = 0; i < sections.length; i++)
 		{
-			if (cur_scroll_top > $(sections[i]).offset().top - header_height)
+			if (cur_scroll_top > $(sections[i]).offset().top - header_height - 300)
+			{
+				if ($(sections[i]).attr('id') == undefined)
+					continue;
 				cur_section = $(sections[i]);
+			}
 			else
 				break;
 		}

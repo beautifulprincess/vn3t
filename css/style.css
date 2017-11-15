@@ -303,7 +303,7 @@ header.onTop .navbar-toggler-right{
 	text-transform: uppercase;
 }
 
-#technology{
+.technology{
 	background-image: url(../images/bg-technology.jpg);
 	background-size: cover;
 	background-position: center;
@@ -311,24 +311,24 @@ header.onTop .navbar-toggler-right{
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	z-index: 1;
 }
-#technology h1{
+.technology h1{
 	color: #fff;
 }
-#technology .row .col{
+.technology .row .col{
 	margin-bottom: 80px;
 	display: relative;
 }
-#technology .row .col .tech-block{
+.technology .row .col .tech-block{
 	padding: 50px;
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 8px;
 	width: 90%;
 	height: 100%;
 }
-#technology .row .col:first-child .tech-block{
+.technology .row .col:first-child .tech-block{
 	margin-left: 10%;
 }
-#technology .tech-block p:last-child{
+.technology .tech-block p:last-child{
 	margin-bottom: 0;
 }
 .tech-icon{
@@ -362,7 +362,7 @@ header.onTop .navbar-toggler-right{
 	text-align: justify;
 }
 
-#ecosystem{
+.ecosystem{
 	background: #fff; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* For Opera 11.1 to 12.0 */
@@ -370,15 +370,15 @@ header.onTop .navbar-toggler-right{
     background: linear-gradient(rgb(255, 255, 255), rgb(110, 155, 205)); /* Standard syntax */
 	padding-bottom: 40px;
 }
-#ecosystem p{
+.ecosystem p{
 	color: #000;
 	font-size: 25px;
 }
-#ecosystem img.ecosystem-image{
+.ecosystem img.ecosystem-image{
 	width: 100%;
 	max-width: 940px;
 }
-#ecosystem img.ecosystem-icodetails{
+.ecosystem img.ecosystem-icodetails{
 	width: 100%;
 	max-width: 660px;
 }
@@ -394,7 +394,7 @@ header.onTop .navbar-toggler-right{
 	width: 90%;
 	margin: 0 auto 10px;
 }
-#ecosystem table.ecosystem-table td{
+.ecosystem table.ecosystem-table td{
 	text-align: center;
 	height: 50px;
 	border-top: 3px solid rgb(41, 43, 114);
@@ -403,10 +403,10 @@ header.onTop .navbar-toggler-right{
 	line-height: 22px;
 	color: #000;
 }
-#ecosystem .col-sm-3{
+.ecosystem .col-sm-3{
 	text-align: center;
 }
-#ecosystem .col-sm-3 p{
+.ecosystem .col-sm-3 p{
 	margin-bottom: 0;
 	font-size: 20px;
 	line-height: 22px;
@@ -438,7 +438,7 @@ header.onTop .navbar-toggler-right{
 .ico-percent-color.color4{
 	background: #6699cc;
 }
-#ecosystem table td{
+.ecosystem table td{
 	text-align: left;
 	font-size: 24px;
 }
@@ -551,6 +551,7 @@ header.onTop .navbar-toggler-right{
 	height: calc(100% + 30px);
 	border: 3px dashed rgb(41, 43, 114);
 	border-radius: 50%;
+	z-index: -1;
 }
 .circle-dashed:hover:after{
   animation-duration: 500s;
@@ -585,8 +586,47 @@ header.onTop .navbar-toggler-right{
 .circle-dashed.adv-member-5{background-image: url(../images/member/advisory/5.jpg);}
 .exe-members p{
 	font-size: 25px;
-	padding: 10px 30px;
+	padding: 10px;
 	letter-spacing: 6px;
+}
+.tech-members p{
+	font-size: 23px;
+	padding: 10px 0px;
+	letter-spacing: 2px;
+}
+.circle-dashed:hover .member-detail{
+	opacity: 1;
+}
+.member-detail{
+	opacity: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(52, 72, 134, 0.5);
+	position: absolute;
+	border-radius: 50%;
+	transition-duration: 0.3s;
+}
+.member-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+.member-detail p{
+	color: #fff;
+	font-size: 23px;
+	letter-spacing: 0px;
+}
+.member-detail .member-soicals a{
+	display: inline-block;
+	background-color: rgb(0, 119, 183);
+	border-radius: 4px;
+	width: 30px;
+	height: 30px;
+	padding-top: 4px;
+}
+.member-detail .member-soicals a i{
+	font-size: 25px;
+	color: #fff;
 }
 
 .administrative{
@@ -595,7 +635,36 @@ header.onTop .navbar-toggler-right{
 	z-index: 1;
 	padding-bottom: 40px;
 }
-.advisory{
+.administrative-item{
+	position: relative;
+}
+.administrative-item .administrative-item-info{
+	position: absolute;
+	background: rgba(0, 0, 0, .5);
+	display: table;
+	opacity: 0;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	transition-duration: 0.3s;
+}
+.administrative-item:hover .administrative-item-info{
+	opacity: 1;
+}
+.administrative-item .administrative-item-info p{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+.administrative-item .administrative-item-info p span{
+	border: 2px solid #fff;
+	border-radius: 4px;
+	height: 20px;
+    display: inline-block;
+    line-height: 14px;
+}
+#advisory{
 	padding-bottom: 40px;
 	z-index: 1;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -643,10 +712,10 @@ header.onTop .navbar-toggler-right{
 	.navbar-toggleable-md .navbar-nav{
 		background-color: transparent;
 	}
-	#technology .row .col .tech-block{
+	.technology .row .col .tech-block{
 		width: 100%;
 	}
-	#technology .row .col:first-child .tech-block{
+	.technology .row .col:first-child .tech-block{
 		margin-left: 0;
 	}
 }
@@ -661,12 +730,12 @@ header.onTop .navbar-toggler-right{
 }
 @media (max-width: 576px)
 {
-	#technology .row .col .tech-block{
+	.technology .row .col .tech-block{
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	#technology .row .col:first-child .tech-block{
+	.technology .row .col:first-child .tech-block{
 		margin-left: 5%;
 	}
 	#home .home-icon{
