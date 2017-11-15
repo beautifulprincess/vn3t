@@ -579,6 +579,9 @@ header.onTop .navbar-toggler-right{
 .circle-dashed.tech-member-10{background-image: url(../images/member/technical/10.jpg);}
 .circle-dashed.tech-member-11{background-image: url(../images/member/technical/11.jpg);}
 .circle-dashed.tech-member-12{background-image: url(../images/member/technical/12.jpg);}
+.circle-dashed.tech-member-13{background-image: url(../images/member/technical/13.jpg);}
+.circle-dashed.tech-member-14{background-image: url(../images/member/technical/14.jpg);}
+.circle-dashed.tech-member-15{background-image: url(../images/member/technical/15.jpg);}
 .circle-dashed.adv-member-1{background-image: url(../images/member/advisory/1.jpg);}
 .circle-dashed.adv-member-2{background-image: url(../images/member/advisory/2.jpg);}
 .circle-dashed.adv-member-3{background-image: url(../images/member/advisory/3.jpg);}
@@ -615,6 +618,7 @@ header.onTop .navbar-toggler-right{
 	color: #fff;
 	font-size: 23px;
 	letter-spacing: 0px;
+	padding: 0;
 }
 .member-detail .member-soicals a{
 	display: inline-block;
@@ -663,6 +667,14 @@ header.onTop .navbar-toggler-right{
 	height: 20px;
     display: inline-block;
     line-height: 14px;
+}
+.administrative-item .administrative-item-info p span a{
+	color: #fff;
+}
+.administrative-item .administrative-item-info p span a:hover,
+.administrative-item .administrative-item-info p span a:active,
+.administrative-item .administrative-item-info p span a:focus{
+	text-decoration: none;
 }
 #advisory{
 	padding-bottom: 40px;
