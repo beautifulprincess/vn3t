@@ -79,7 +79,7 @@ header.onTop{
 section{
 	position: relative;
 	width: 100%;
-	padding: 0 calc(50% - 496px);
+	padding: 0 calc(50% - 496px) 40px;
 	text-align: center;
 }
 
@@ -310,13 +310,14 @@ header.onTop .navbar-toggler-right{
 	background-repeat: no-repeat;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	z-index: 1;
+	padding-bottom: 0;
 }
 .technology h1{
 	color: #fff;
 }
 .technology .row .col{
-	margin-bottom: 80px;
-	display: relative;
+	margin-bottom: 40px;
+	position: relative;
 }
 .technology .row .col .tech-block{
 	padding: 50px;
@@ -495,18 +496,168 @@ header.onTop .navbar-toggler-right{
 	height: auto;
 }
 #roadmap{
-	background: rgb(110, 155, 205); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(110, 155, 205), rgb(40, 40, 110)); /* Standard syntax */
-	padding-bottom: 40px;
+	background: rgb(52, 58, 151);
 }
 #roadmap h1{
 	color: #fff;
 }
 #roadmap img{
 	width: 100%;
+}
+#roadmap_graph{
+	position: relative;
+}
+#roadmap_graph .default-roadmap{
+}
+#roadmap_graph .roadmap-row{
+	position: relative;
+	height: 250px;
+}
+#roadmap_graph .row-float-left{
+	padding-right: 120px;
+}
+#roadmap_graph .row-float-right{
+	padding-left: 120px;
+}
+#roadmap_graph .roadmap-col{
+	padding: 0 30px;
+	height: 250px;
+	position: relative;
+}
+#roadmap_graph .roadmap-col:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	top: 50px;
+	left: 0px;
+	background-color: #fff;
+}
+#roadmap_graph .roadmap-date:after{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 40px;
+	left: calc(50% - 15px);
+	border-radius: 50%;
+	border: 3px solid rgb(112, 144, 193);
+	background: #fff;
+}
+#roadmap_graph .row-float-left .roadmap-col:first-child:before{
+	width: calc(100% - 120px);
+	left: 120px;
+}
+#roadmap_graph .row-float-left:first-child .roadmap-col:first-child:before{
+	width: calc(100% - 0px);
+	left: 0px;
+}
+#roadmap_graph .row-float-right .roadmap-col:first-child:before{
+	width: calc(100% - 120px);
+}
+#roadmap_graph .row-float-left:after{
+	content: '';
+	position: absolute;
+	width: 130px;
+	height: 260px;
+	top: 50px;
+	right: 0;
+	border-top-right-radius: 130px;
+	border-bottom-right-radius: 130px;
+	border: 10px solid #fff;
+	border-left: none;
+}
+#roadmap_graph .row-float-right:after{
+	content: '';
+	position: absolute;
+	width: 130px;
+	height: 260px;
+	top: 50px;
+	left: 0;
+	border-top-left-radius: 130px;
+	border-bottom-left-radius: 130px;
+	border: 10px solid #fff;
+	border-right: none;
+}
+#roadmap_graph .row-float-left:last-child:after,
+#roadmap_graph .row-float-right:last-child:after{
+	display: none;
+}
+#roadmap_graph .row-float-left:last-child .roadmap-col:last-child:after{
+	content: '';
+	position: absolute;
+	width: 110px;
+	height: 0px;
+	top: 50px;
+	right: -130px;
+	border-top: 10px dashed #fff;
+	border-radius: 0;
+}
+#roadmap_graph .row-float-right:last-child .roadmap-col:last-child:after{
+	content: '';
+	position: absolute;
+	width: 110px;
+	height: 0px;
+	top: 50px;
+	left: -130px;
+	border: none;
+	border-top: 10px dashed #fff;
+	border-radius: 0;
+}
+#roadmap_graph .width-25{
+	width: 25%;
+}
+#roadmap_graph .width-33{
+	width: 33%;
+}
+#roadmap_graph .width-50{
+	width: 50%;
+}
+#roadmap_graph .roadmap-date{
+	font-size: 25px;
+	color: rgb(226, 214, 23);
+}
+#roadmap_graph .roadmap-content{
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	color: #fff;
+	margin-top: 40px;
+	line-height: 26px;
+}
+#roadmap_graph.mobile-roadmap .roadmap-col{
+	height: auto;
+	text-align: left;
+	padding: 0 30px 0 70px;
+}
+#roadmap_graph.mobile-roadmap:before{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: calc(100% - 60px);
+	left: 30px;
+	top: 0px;
+	border-left: 10px solid #fff;
+}
+#roadmap_graph.mobile-roadmap .roadmap-col:before{
+	display: none;
+}
+#roadmap_graph.mobile-roadmap .roadmap-col:last-child:after{
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 110px;
+	top: 35px;
+	left: 30px;
+	border-left: 10px dashed #fff;
+}
+#roadmap_graph.mobile-roadmap .roadmap-date:after
+{
+	top: 3px;
+	left: 20px;
+}
+#roadmap_graph.mobile-roadmap .roadmap-content{
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
 
 #members{
@@ -517,8 +668,8 @@ header.onTop .navbar-toggler-right{
 	height: 240px;
 }
 .circle-dashed.tech-member{
-	width: 200px;
-	height: 200px;
+	width: 120px;
+	height: 120px;
 }
 .circle-dashed.adv-member{
 	width: 120px;
@@ -561,32 +712,6 @@ header.onTop .navbar-toggler-right{
   animation-timing-function: linear;
   /*animation-direction: alternate;*/
 }
-.circle-dashed.exe-member-1{background-image: url(../images/member/executive/1.jpg);}
-.circle-dashed.exe-member-2{background-image: url(../images/member/executive/2.jpg);}
-.circle-dashed.exe-member-3{background-image: url(../images/member/executive/3.jpg);}
-.circle-dashed.exe-member-4{background-image: url(../images/member/executive/4.jpg);}
-.circle-dashed.exe-member-5{background-image: url(../images/member/executive/5.jpg);}
-.circle-dashed.exe-member-6{background-image: url(../images/member/executive/6.jpg);}
-.circle-dashed.tech-member-1{background-image: url(../images/member/technical/1.jpg);}
-.circle-dashed.tech-member-2{background-image: url(../images/member/technical/2.jpg);}
-.circle-dashed.tech-member-3{background-image: url(../images/member/technical/3.jpg);}
-.circle-dashed.tech-member-4{background-image: url(../images/member/technical/4.jpg);}
-.circle-dashed.tech-member-5{background-image: url(../images/member/technical/5.jpg);}
-.circle-dashed.tech-member-6{background-image: url(../images/member/technical/6.jpg);}
-.circle-dashed.tech-member-7{background-image: url(../images/member/technical/7.jpg);}
-.circle-dashed.tech-member-8{background-image: url(../images/member/technical/8.jpg);}
-.circle-dashed.tech-member-9{background-image: url(../images/member/technical/9.jpg);}
-.circle-dashed.tech-member-10{background-image: url(../images/member/technical/10.jpg);}
-.circle-dashed.tech-member-11{background-image: url(../images/member/technical/11.jpg);}
-.circle-dashed.tech-member-12{background-image: url(../images/member/technical/12.jpg);}
-.circle-dashed.tech-member-13{background-image: url(../images/member/technical/13.jpg);}
-.circle-dashed.tech-member-14{background-image: url(../images/member/technical/14.jpg);}
-.circle-dashed.tech-member-15{background-image: url(../images/member/technical/15.jpg);}
-.circle-dashed.adv-member-1{background-image: url(../images/member/advisory/1.jpg);}
-.circle-dashed.adv-member-2{background-image: url(../images/member/advisory/2.jpg);}
-.circle-dashed.adv-member-3{background-image: url(../images/member/advisory/3.jpg);}
-.circle-dashed.adv-member-4{background-image: url(../images/member/advisory/4.jpg);}
-.circle-dashed.adv-member-5{background-image: url(../images/member/advisory/5.jpg);}
 .exe-members p{
 	font-size: 25px;
 	padding: 10px;
@@ -616,20 +741,22 @@ header.onTop .navbar-toggler-right{
 }
 .member-detail p{
 	color: #fff;
-	font-size: 23px;
+	font-size: 14px;
 	letter-spacing: 0px;
 	padding: 0;
+	margin-bottom: 6px;
 }
 .member-detail .member-soicals a{
 	display: inline-block;
 	background-color: rgb(0, 119, 183);
 	border-radius: 4px;
-	width: 30px;
-	height: 30px;
-	padding-top: 4px;
+	width: 20px;
+	height: 20px;
+	padding-top: 0px;
+	line-height: 20px;
 }
 .member-detail .member-soicals a i{
-	font-size: 25px;
+	font-size: 16px;
 	color: #fff;
 }
 
@@ -698,16 +825,10 @@ header.onTop .navbar-toggler-right{
 	background-size: contain;
 	margin: 0 auto 40px;
 }
-.partner-bg.partner-1{background-image: url(../images/partners/1.png);}
-.partner-bg.partner-2{background-image: url(../images/partners/2.png);}
-.partner-bg.partner-3{background-image: url(../images/partners/3.png);}
-.partner-bg.partner-4{background-image: url(../images/partners/4.png);}
-.partner-bg.partner-5{background-image: url(../images/partners/5.png);}
-.partner-bg.partner-6{background-image: url(../images/partners/6.png);}
-.partner-bg.partner-7{background-image: url(../images/partners/7.png);}
-.partner-bg.partner-8{background-image: url(../images/partners/8.png);}
 
-.blogs-news{}
+.blogs-news{
+	padding-bottom: 0;
+}
 .blogs-news .blog{
 	position: relative;
 	margin-bottom: 30px;
