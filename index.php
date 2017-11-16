@@ -80,7 +80,7 @@ $advisor_members = array(
 	array('name' => 'Université Laval', 'title' => 'AI', 'photo' => '5.jpg', 'linkedin' => '#')
 );
 $administratives = array(
-	array('img' => '3.png', 'title' => 'Accounting: BDO (Canada-Gibralta)', 'link' => 'https://www.bdo.com'),
+	array('img' => '4.png', 'title' => 'Accounting: BDO (Canada-Gibralta)', 'link' => 'https://www.bdo.com'),
 	array('img' => '2.png', 'title' => 'Legal: Fasken Martineau Québec', 'link' => 'http://www.fasken.com')
 );
 $partners = array(
