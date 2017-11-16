@@ -40,6 +40,8 @@ $(document).ready(function(){
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
 		let header_height = 60;
+		if ($(event.target).attr("href") == "#")
+			$(event.target).attr("href", "#home");
 		if ($(event.target).attr("href") == "#home")
 			header_height = 0;
 		$('html, body').animate({
