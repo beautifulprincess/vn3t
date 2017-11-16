@@ -66,7 +66,7 @@ $tech_members = array(
 	array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'linkedin' => '#'),
-	array('name' => 'Ahmed Al -Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'linkedin' => '#'),
+	array('name' => 'Ahmed Al-Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'linkedin' => '#'),
 	array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'linkedin' => '#'),
@@ -251,8 +251,8 @@ $socials = array(
 <section id="members">
 	<h1>EXECUTIVE MEMBERS</h1>
 	<div class="row exe-members">
-<?php foreach ($exe_members as $em) { ?>
-		<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+<?php foreach ($exe_members as $i => $em) { ?>
+		<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3<?php echo $i == 4 ? ' offset-lg-3' : ''; ?>">
 			<div class="circle-dashed exe-member" style="background-image: url(images/member/executive/<?php echo $em['photo']; ?>);">
 				<div class="member-detail">
 					<div class="member-info">
