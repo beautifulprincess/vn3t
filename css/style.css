@@ -1016,7 +1016,7 @@ footer button:focus, footer button:active{
 
 #work-in-progress {
 	position: fixed;
-	z-index: 200000;
+	z-index: 2000000;
 	background-color: #FFFFFF;
 	top: 0;
 	left: 0;
