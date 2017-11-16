@@ -269,8 +269,8 @@ $socials = array(
 	</div>
 	<h1>TECHNICAL TEAM</h1>
 	<div class="row tech-members">
-<?php foreach ($tech_members as $tm) { ?>
-		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-2">
+<?php foreach ($tech_members as $i => $tm) { ?>
+		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-2<?php echo $i == 12 ? " offset-lg-4 offset-md-3 offset-sm-2" : ''; ?>">
 			<div class="circle-dashed tech-member" style="background-image: url(images/member/technical/<?php echo $tm['photo']; ?>);">
 				<div class="member-detail">
 					<div class="member-info">
@@ -303,7 +303,7 @@ $socials = array(
 	<h1>ADVISORY TEAM</h1>
 	<div class="row">
 <?php foreach ($advisor_members as $i => $am) { ?>
-		<div class="col col-xs-12 col-md-2<?php echo $i == 0 ? " offset-md-1" : ""; ?>">
+		<div class="col col-xs-12 col-sm-4 col-lg-2<?php echo $i == 0 ? " offset-lg-1" : ""; echo $i == 3 ? " offset-sm-2 offset-lg-0" : ""; ?>">
 			<div class="circle-dashed adv-member" style="background-image: url(images/member/advisory/<?php echo $am['photo']; ?>);">
 				<div class="member-detail">
 					<div class="member-info">
