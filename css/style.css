@@ -65,12 +65,13 @@ header{
 	position: fixed;
 	width: 100%;
 	height: 60px;
-	background: rgb(85, 100, 180);/*rgb(160, 170, 240);*/
+	background: rgb(3, 6, 58);/*rgb(160, 170, 240);*/
 	border-bottom: 2px solid #fff;
 	padding: 0 calc(50% - 496px);
 	z-index: 999;
 	transition-duration: 0.9s;
 	top: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 header.onTop{
 	height: 90px;
