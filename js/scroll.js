@@ -7,10 +7,12 @@ $(document).ready(function(){
 		if (cur_scroll_top == 0)
 		{
 			$("header").addClass('onTop');
+			$("#top-logo-ani").addClass('onTop');
 		}
 		else
 		{
 			$("header").removeClass('onTop');
+			$("#top-logo-ani").removeClass('onTop');
 		}
 		var sections = $("section");
 		var cur_section = sections[0];

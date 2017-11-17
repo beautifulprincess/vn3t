@@ -45,7 +45,7 @@ section#home{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(201, 221, 245, 0);
+	background-color: rgba(201, 221, 245, 0.1);
 }
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
@@ -77,17 +77,18 @@ header.onTop{
 	height: 90px;
 	top: -90px;
 	background: transparent;
+	box-shadow: none;
 }
-header #top-logo-ani{
+#top-logo-ani{
 	position: fixed;
 	width: 500px;
 	height: 150px;
-	z-index: 9999;
+	z-index: 99;
 	transition-duration: 0.9s;
 	top: -150px;
 	left: calc(50% - 250px);
 }
-header #top-logo-ani:before{
+#top-logo-ani:before{
 	content: '';
 	position: absolute;
 	width: 0;
@@ -97,12 +98,12 @@ header #top-logo-ani:before{
 	border-left: 250px solid transparent;
 	z-index: -1;
 }
-header #top-logo-ani img{
+#top-logo-ani img{
 	width: 200px;
 	display: block;
 	margin: 30px auto;
 }
-header.onTop #top-logo-ani{
+#top-logo-ani.onTop{
 	top: 0;
 }
 
