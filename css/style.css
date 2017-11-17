@@ -45,7 +45,7 @@ section#home{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(201, 221, 245, 0.6);
+	background-color: rgba(201, 221, 245, 0);
 }
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
@@ -202,6 +202,7 @@ header.onTop .navbar-toggler-right{
 	height: 326px;
 	background-color: transparent;
 	position: relative;
+	visibility: hidden;
 }
 /*#home .home-icon:before{
 	content: '';
