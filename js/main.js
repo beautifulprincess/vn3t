@@ -74,3 +74,24 @@ $(document).ready(function(){
 $(window).bind("load", function () {
 	$('#work-in-progress').fadeOut(100);
 });
+
+function submit_contact_frm(){
+	var username = $("#username").val();
+	var useremail = $("#useremail").val();
+	var message = $("#message").val();
+
+	$.ajax({
+		url: "sendmail.php",
+		data: {username: username, useremail: useremail, message: message},
+		type: "post",
+		dataType: "json",
+		success: function(resp) {
+			console.log(resp);
+		},
+		error: function(err) {
+			console.log(err);
+		}
+	});
+
+	return false;
+}

@@ -78,6 +78,33 @@ header.onTop{
 	top: -90px;
 	background: transparent;
 }
+header #top-logo-ani{
+	position: fixed;
+	width: 500px;
+	height: 150px;
+	z-index: 9999;
+	transition-duration: 0.9s;
+	top: -150px;
+	left: calc(50% - 250px);
+}
+header #top-logo-ani:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 150px solid #fff;
+	border-right: 250px solid transparent;
+	border-left: 250px solid transparent;
+	z-index: -1;
+}
+header #top-logo-ani img{
+	width: 200px;
+	display: block;
+	margin: 30px auto;
+}
+header.onTop #top-logo-ani{
+	top: 0;
+}
 
 section{
 	position: relative;
@@ -178,7 +205,7 @@ header.onTop .navbar-toggler-right{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: 100px calc(50% - 496px) 0;
+	padding: 200px calc(50% - 496px) 0;
 	z-index: 1;
 }
 #home h1{
@@ -199,7 +226,7 @@ header.onTop .navbar-toggler-right{
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 370px;
-	height: 326px;
+	height: 226px;/*326px;*/
 	background-color: transparent;
 	position: relative;
 	visibility: hidden;

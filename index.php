@@ -143,6 +143,7 @@ $socials = array(
 <body>
 <div id="particles-js"></div>
 <header class="onTop">
+	<div id="top-logo-ani"><img src="images/logo.png"></div>
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -429,7 +430,7 @@ $socials = array(
 		</div>
 		<div class="col col-xs-12 col-sm-12 col-md-5 offset-md-1 contact-us">
 			<h1>CONTACT US</h1>
-			<form id="contact_frm" onSubmit="return submit_contact_frm();">
+			<form id="contact_frm" onSubmit="return submit_contact_frm();" method="post">
 			<input type="text" id="username" name="username" placeholder="Your name" required>
 			<input type="email" id="useremail" name="useremail" placeholder="E-mail" required>
 			<textarea id="message" name="message" required placeholder="Your message"></textarea>
