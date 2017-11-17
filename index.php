@@ -126,6 +126,7 @@ $socials = array(
 	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="css/countdown.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" media="screen" href="particles/style.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
@@ -140,6 +141,7 @@ $socials = array(
 	<script src="js/piechart.js"></script>
 </head>
 <body>
+<div id="particles-js"></div>
 <header class="onTop">
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,7 +204,7 @@ $socials = array(
 </section>
 <section class="ecosystem">
 	<h1>ECOSYSTEM</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+	<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>-->
 	<div class="row ecosystem-wireframe-div">
 <?php foreach ($ecosystems as $eco) { ?>
 		<div class="col-sm-3">
@@ -240,7 +242,7 @@ $socials = array(
 		<div class="faq-answer answer<?php echo $i + 1; ?>">
 			<?php echo $faq['a']; ?>
 		</div>
-		<?php if ($i == 0) echo "<h4>Common faq</h4>"; ?>
+		<?php //if ($i == 0) echo "<h4>Common faq</h4>"; ?>
 <?php } ?>
 	</div>
 </section>
@@ -422,7 +424,7 @@ $socials = array(
 <?php } ?>
 			</div>
 			<img src="images/logo-footer.png">
-			<button type="button">Become Affiliate</button>
+			<!--<button type="button">Become Affiliate</button>-->
 			<p>Copyright &copy; 2017  Vn3t.<br>All rights reserved.</p>
 		</div>
 		<div class="col col-xs-12 col-sm-12 col-md-5 offset-md-1 contact-us">
@@ -436,7 +438,11 @@ $socials = array(
 		</div>
 	</div>
 </footer>
+
 <div id="work-in-progress"><div class="work-spinner"></div></div>
+
+	<script src="particles/particles.min.js"></script>
+	<script src="particles/app.js"></script>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f504cac8-32a2-4341-9e49-a69d3a0e8452";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>

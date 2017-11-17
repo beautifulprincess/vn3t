@@ -24,7 +24,7 @@ section#home{
   background: #000;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+  z-index: 0;
 }
 .video-foreground,
 .video-background iframe {
@@ -69,10 +69,12 @@ header{
 	border-bottom: 2px solid #fff;
 	padding: 0 calc(50% - 496px);
 	z-index: 999;
-	transition-duration: 0.3s;
+	transition-duration: 0.9s;
+	top: 0;
 }
 header.onTop{
 	height: 90px;
+	top: -90px;
 	background: transparent;
 }
 
@@ -81,6 +83,7 @@ section{
 	width: 100%;
 	padding: 0 calc(50% - 496px) 40px;
 	text-align: center;
+	background: #fff;
 }
 
 section h1{
@@ -304,7 +307,8 @@ header.onTop .navbar-toggler-right{
 }
 
 .technology{
-	background-image: url(../images/bg-technology.jpg);
+/*	background-image: url(../images/bg-technology.jpg);*/
+	background-color: rgba(52, 58, 151, 0.5);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -448,6 +452,7 @@ header.onTop .navbar-toggler-right{
 	padding-bottom: 40px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	z-index: 1;
+	background: #fff;
 }
 #faq .faq-div{
 	text-align: left;
@@ -496,7 +501,7 @@ header.onTop .navbar-toggler-right{
 	height: auto;
 }
 #roadmap{
-	background: rgb(52, 58, 151);
+	background: rgba(52, 58, 151, 0.5);
 }
 #roadmap h1{
 	color: #fff;
@@ -662,6 +667,7 @@ header.onTop .navbar-toggler-right{
 
 #members{
 	padding-bottom: 40px;
+	background: #fff;
 }
 .circle-dashed.exe-member{
 	width: 200px;
@@ -809,11 +815,14 @@ header.onTop .navbar-toggler-right{
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #partners{
-	background: rgb(90, 110, 180);
-    background: -webkit-linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));
+	background: rgba(90, 110, 180, 0.5);
+/*    background: -webkit-linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));
     background: -o-linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));
     background: -moz-linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));
-    background: linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));
+    background: linear-gradient(rgb(90, 110, 180), rgb(50, 70, 130));*/
+}
+#partners h1{
+	color: #fff;
 }
 
 .partner-bg{
@@ -946,7 +955,7 @@ footer{
     width: 100%;
     padding: 0px calc(50% - 496px) 50px;
     text-align: center;
-	background: rgb(2, 4, 50);
+	background: rgba(2, 4, 50, 0.5);
 }
 footer>.row{
 	margin: 0;
@@ -970,18 +979,20 @@ footer .follow-us a{
 	width: 60px;
 	height: 60px;
 	border-radius: 6px;
-	background: rgb(230, 230, 235);
+/*	background: rgb(230, 230, 235);*/
 }
 footer .follow-us a i{
 	display: inline-block;
-	color: rgb(15, 22, 77);
+/*	color: rgb(15, 22, 77);*/
+	color: #fff;
 	font-size: 40px;
 	line-height: 60px;
 }
 footer .follow-us img{
 	display: block;
-	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-top: 60px;
+	margin-bottom: 70px;
+	height: 50px;
 }
 footer .follow-us button{
 	width: 260px;
@@ -1010,10 +1021,11 @@ footer .contact-us input, footer .contact-us textarea {
 	display: block;
 	width: 100%;
 	margin-bottom: 10px;
-	border: none;
+	border: 2px solid rgb(204, 204, 204);
 	border-radius: 6px;
 	padding: 4px 20px;
-	background-color: rgb(204, 204, 204);
+	background-color: transparent;/* rgb(204, 204, 204);*/
+	color: #fff;
 }
 footer .contact-us textarea {
 	height: 143px;
@@ -1022,14 +1034,15 @@ footer .contact-us textarea {
 footer .contact-us button{
 	width: 140px;
 	height: 40px;
-	border: none;
+	border: 2px solid rgb(204, 204, 204);;
 	border-radius: 6px;
-	color: rgb(15, 22, 77);
+	color: #fff;/*rgb(15, 22, 77);*/
 	font-size: 20px;
 	font-weight: bold;
-	background-color: rgb(230, 230, 235);
+	background-color: transparent;/*rgb(230, 230, 235);*/
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 footer .contact-us input:focus, footer .contact-us textarea:focus {
 	outline: none;

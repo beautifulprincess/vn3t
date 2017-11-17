@@ -1,0 +1,21 @@
+html,body{
+	padding: 0;
+	margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
