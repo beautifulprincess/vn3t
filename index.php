@@ -205,8 +205,9 @@ $socials = array(
 </section>
 <section class="ecosystem">
 	<h1>ECOSYSTEM</h1>
+	<img class="ecosystem-image" src="images/ecosystem.png">
 	<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>-->
-	<div class="row ecosystem-wireframe-div">
+<!--	<div class="row ecosystem-wireframe-div">
 <?php foreach ($ecosystems as $eco) { ?>
 		<div class="col-sm-3">
 			<table class="ecosystem-table">
@@ -216,9 +217,26 @@ $socials = array(
 			<p><?php echo $eco['p']; ?></p>
 		</div>
 <?php } ?>
-	</div>
-	<img class="ecosystem-image" src="images/ecosystem.png">
+	</div>-->
+</section>
+<section class="icodetails">
 	<h1>ICO DETAILS</h1>
+<!--
+	<div class="countdown row">
+		<div class="countdown-day col-sm-6 col-md-6 col-lg-3">
+			<div class="chart active" data-percentage="75">
+				<div class="percentage">%</div>
+				<div class="completed"></div>
+			</div>
+		</div>
+		<div class="countdown-hour col-sm-6 col-md-6 col-lg-3">
+		</div>
+		<div class="countdown-minute col-sm-6 col-md-6 col-lg-3">
+		</div>
+		<div class="countdown-second col-sm-6 col-md-6 col-lg-3">
+		</div>
+	</div>
+-->
 	<p>The VC01n runs from December 1st until December 22nd 2017.<br>The Public Sale will begin February 1st 2018. </p>
 
 <div id="pie-container"></div>
