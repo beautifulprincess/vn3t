@@ -221,25 +221,31 @@ $socials = array(
 </section>
 <section class="icodetails">
 	<h1>ICO DETAILS</h1>
-<!--
 	<div class="countdown row">
-		<div class="countdown-day col-sm-6 col-md-6 col-lg-3">
-			<div class="chart active" data-percentage="75">
-				<div class="percentage">%</div>
-				<div class="completed"></div>
-			</div>
+		<div class="countdown-day col col-sm-6 col-md-6 col-lg-3">
+			<canvas id="countdown1" width="220px" height="220px"></canvas>
+			<div class="counting-val days-val"></div>
+			<p>DAYS</p>
 		</div>
-		<div class="countdown-hour col-sm-6 col-md-6 col-lg-3">
+		<div class="countdown-hour col col-sm-6 col-md-6 col-lg-3">
+			<canvas id="countdown2" width="220px" height="220px"></canvas>
+			<div class="counting-val hours-val"></div>
+			<p>HOURS</p>
 		</div>
-		<div class="countdown-minute col-sm-6 col-md-6 col-lg-3">
+		<div class="countdown-minute col col-sm-6 col-md-6 col-lg-3">
+			<canvas id="countdown3" width="220px" height="220px"></canvas>
+			<div class="counting-val minutes-val"></div>
+			<p>MINUTES</p>
 		</div>
-		<div class="countdown-second col-sm-6 col-md-6 col-lg-3">
+		<div class="countdown-second col col-sm-6 col-md-6 col-lg-3">
+			<canvas id="countdown4" width="220px" height="220px"></canvas>
+			<div class="counting-val seconds-val"></div>
+			<p>SECONDS</p>
 		</div>
 	</div>
--->
-	<p>The VC01n runs from December 1st until December 22nd 2017.<br>The Public Sale will begin February 1st 2018. </p>
+	<p class="ico-detail-txt">The VC01n runs from December 1st until December 22nd 2017.<br>The Public Sale will begin February 1st 2018. </p>
 
-<div id="pie-container"></div>
+	<div id="pie-container"></div>
 	<div>
 		<p><span class="white">Target:</span> <span class="black">$25 million</span> <span class="white">Supply:</span> <span class="black">3.5 billion tokens</span></p>
 		<table align=center>
