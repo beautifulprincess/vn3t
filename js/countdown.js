@@ -10,8 +10,11 @@ $(document).ready(function(){
 		var now = Date.UTC(now_date.getYear() + 1900, now_date.getUTCMonth(), now_date.getUTCDate(), now_date.getUTCHours(), now_date.getUTCMinutes(), now_date.getUTCSeconds());
 		delta_seconds = Math.floor((ico - now) / 1000);
 
-		if (delta_seconds <= 0)
+		if (delta_seconds < 0)
+		{
+			clearInterval(counting);
 			return;
+		}
 
 		var delta_days = Math.floor(delta_seconds / 86400);
 		delta_seconds -= delta_days * 86400;
