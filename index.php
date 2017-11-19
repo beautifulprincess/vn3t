@@ -220,7 +220,7 @@ $socials = array(
 	</div>-->
 </section>
 <section class="icodetails">
-	<h1>ICO DETAILS</h1>
+	<h1>VC01N ICO Launches in</h1>
 	<div class="countdown row">
 		<div class="countdown-day col col-sm-6 col-md-6 col-lg-3">
 			<canvas id="countdown1" width="220px" height="220px"></canvas>

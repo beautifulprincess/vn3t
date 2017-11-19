@@ -446,6 +446,9 @@ header.onTop .navbar-toggler-right{
 .icodetails{
 	background: rgba(117, 153, 231, 1);
 }
+.icodetails h1{
+	text-transform: uppercase;
+}
 #pie-container{
 	height: 50vw;
 	width: 100%;
