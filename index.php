@@ -205,7 +205,9 @@ $socials = array(
 </section>
 <section class="ecosystem">
 	<h1>ECOSYSTEM</h1>
-	<img class="ecosystem-image" src="images/ecosystem.png">
+	<img class="ecosystem-image" src="images/provider.png">
+	<img class="ecosystem-image" src="images/customer_service.png">
+	<!--<img class="ecosystem-image" src="images/ecosystem.png">-->
 	<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>-->
 <!--	<div class="row ecosystem-wireframe-div">
 <?php foreach ($ecosystems as $eco) { ?>
