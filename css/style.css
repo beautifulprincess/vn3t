@@ -964,9 +964,9 @@ header.onTop .navbar-toggler-right{
 	height: 100%;
 	border-left: 4px dashed rgb(41, 43, 114);
 	top: 0;
-	left: 40px;
+	left: 0px;
 }
-.blogs-news .news-col h1{
+/*.blogs-news .news-col h1{
 	width: 220px;
 	float: right;
 	margin: 40px 0;
@@ -980,7 +980,7 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .news-col .row .col-lg-12{
 	padding: 0;
-}
+}*/
 .col-xs-12{
 	width: 100%;
 }
@@ -1204,7 +1204,7 @@ footer button:focus, footer button:active{
 .work-spinner {
 	width: 100px;
 	height: 100px;
-	background-image: url(../images/logo2.png);
+	background-image: url(../images/logo3.png);
 	background-repeat: no-repeat;
 	background-size: 70%;
 	background-position: center;
