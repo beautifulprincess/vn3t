@@ -131,7 +131,6 @@ $socials = array(
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src="js/scroll.js"></script>
 	<script src="js/countdown.js"></script>
 	<script>var roadmap_datas = <?php echo json_encode($roadmaps); ?>;</script>
 	<script src="js/main.js"></script>
@@ -139,6 +138,7 @@ $socials = array(
 	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	<script src="js/piechart.js"></script>
+	<script src="js/scroll.js"></script>
 </head>
 <body>
 <div id="particles-js"></div>

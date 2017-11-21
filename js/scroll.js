@@ -1,5 +1,16 @@
+var showed_roadmap = false;
 $(document).ready(function(){
 	var cur_scroll_top = 0;
+
+	var show_roadmap = function(){
+		showed_roadmap = true;
+
+		for(var i = 0; i < roadmap_datas.length; i++)
+			setTimeout(function(i){
+				$("#roadmap_graph .roadmap-col-" + i + " .roadmap-date").css({opacity: 1});
+				$("#roadmap_graph .roadmap-col-" + i + " .roadmap-content").css({left: 0, opacity: 1});
+			}, 200 * i, i);
+	};
 
 	var scroll_processer = function(){
 		var header_height = 90;
@@ -33,6 +44,8 @@ $(document).ready(function(){
 			if ($($(this).children()[0]).attr("href") == "#" + cur_id)
 			{
 				$(this).addClass("active");
+				if (showed_roadmap == false && cur_id == "roadmap")
+					setTimeout(show_roadmap, 1000);
 			}
 		});
 	};

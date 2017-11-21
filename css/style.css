@@ -549,6 +549,7 @@ header.onTop .navbar-toggler-right{
 }
 #roadmap{
 	background: rgba(52, 58, 151, 0.5);
+	min-height: 1164px;
 }
 #roadmap h1{
 	color: #fff;
@@ -559,7 +560,7 @@ header.onTop .navbar-toggler-right{
 #roadmap_graph{
 	position: relative;
 }
-#roadmap_graph .default-roadmap{
+#roadmap_graph {
 }
 #roadmap_graph .roadmap-row{
 	position: relative;
@@ -575,6 +576,10 @@ header.onTop .navbar-toggler-right{
 	padding: 0 30px;
 	height: 250px;
 	position: relative;
+	overflow: hidden;
+}
+#roadmap_graph .roadmap-col:last-child{
+	overflow: visible;
 }
 #roadmap_graph .roadmap-col:before{
 	content: '';
@@ -584,6 +589,24 @@ header.onTop .navbar-toggler-right{
 	top: 50px;
 	left: 0px;
 	background-color: #fff;
+}
+#roadmap_graph .roadmap-col .roadmap-content{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: -100%;
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+#roadmap_graph.mobile-roadmap .roadmap-col .roadmap-content{
+	position: relative;
+	text-align: left;
+}
+#roadmap_graph .roadmap-col.float-right .roadmap-content{
+	left: 100%;
+}
+#roadmap_graph .roadmap-date{
+	opacity: 0;
 }
 #roadmap_graph .roadmap-date:after{
 	content: '';
@@ -641,7 +664,7 @@ header.onTop .navbar-toggler-right{
 	width: 110px;
 	height: 0px;
 	top: 50px;
-	right: -130px;
+	right: -125px;
 	border-top: 10px dashed #fff;
 	border-radius: 0;
 }
@@ -651,7 +674,7 @@ header.onTop .navbar-toggler-right{
 	width: 110px;
 	height: 0px;
 	top: 50px;
-	left: -130px;
+	left: -125px;
 	border: none;
 	border-top: 10px dashed #fff;
 	border-radius: 0;
@@ -668,6 +691,7 @@ header.onTop .navbar-toggler-right{
 #roadmap_graph .roadmap-date{
 	font-size: 25px;
 	color: rgb(226, 214, 23);
+	transition-duration: 0.3s;
 }
 #roadmap_graph .roadmap-content{
 	font-family: 'Roboto-Regular';
@@ -698,7 +722,7 @@ header.onTop .navbar-toggler-right{
 	position: absolute;
 	width: 0px;
 	height: 110px;
-	top: 35px;
+	top: 50px;
 	left: 30px;
 	border-left: 10px dashed #fff;
 }
