@@ -42,12 +42,11 @@ $(document).ready(function(){
 		$(".nav-item.active").removeClass("active");
 		$(".nav-item").each(function(i){
 			if ($($(this).children()[0]).attr("href") == "#" + cur_id)
-			{
 				$(this).addClass("active");
-				if (showed_roadmap == false && cur_id == "roadmap")
-					setTimeout(show_roadmap, 1000);
-			}
 		});
+		var wh = $(window).innerHeight();
+		if (showed_roadmap == false && cur_scroll_top > $("#roadmap").offset().top - wh)
+			setTimeout(show_roadmap, 1000);
 	};
 	$(window).scroll(scroll_processer);
 	scroll_processer();

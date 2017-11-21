@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var initial_home = function(){
 		var hh = $(".home-content").innerHeight();
-		var wh = $(window).height();
+		var wh = $(window).innerHeight();
 		if (hh > wh)
 		{
 			$("section#home").css("height", "auto");
