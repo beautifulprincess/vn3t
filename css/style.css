@@ -248,18 +248,22 @@ header.onTop .navbar-toggler-right{
 #home .home-btn-div{
 	background: rgb(41, 43, 114);
 	margin: 40px auto;
-	width: 300px;
+	width: 360px;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
 	color: #fff;
 	font-size: 30px;
 	font-weight: bold;
-	border-radius: 8px;
+	border-radius: 30px;
 	cursor: pointer;
+	letter-spacing: 2px;
+	transition-duration: 0.3s;
 }
 #home .home-btn-div:hover{
-	color: rgb(226, 214, 23);
+	/*color: rgb(226, 214, 23);*/
+	color: rgb(41, 43, 114);
+	background: #fff;
 }
 
 .prob-icon{
@@ -378,16 +382,23 @@ header.onTop .navbar-toggler-right{
 	background-position: center;
 	background-size: 60%;
 	background-color: rgb(41, 43, 114);
-	transition-duration: 0.1s;
+	transition-duration: 0.3s;
 }
 .tech-icon:hover{
 	background-color: rgb(226, 214, 23);
+	background-color: #fff;
 }
 .tech-icon.icon-gpu{
 	background-image: url(../images/icons/tech-gpu.png);
 }
 .tech-icon.icon-data{
 	background-image: url(../images/icons/tech-data.png);
+}
+.tech-icon.icon-gpu:hover{
+	background-image: url(../images/icons/tech-gpu-h.png);
+}
+.tech-icon.icon-data:hover{
+	background-image: url(../images/icons/tech-data-h.png);
 }
 .tech-title{
 	font-size: 25px;
@@ -744,7 +755,7 @@ header.onTop .navbar-toggler-right{
 	height: calc(100% + 30px);
 	border: 3px dashed rgb(41, 43, 114);
 	border-radius: 50%;
-	z-index: -1;
+	z-index: 0;
 }
 .circle-dashed:hover:after{
   animation-duration: 500s;
@@ -776,6 +787,7 @@ header.onTop .navbar-toggler-right{
 	position: absolute;
 	border-radius: 50%;
 	transition-duration: 0.3s;
+	z-index: 1;
 }
 .member-info {
 	display: table-cell;
@@ -869,6 +881,12 @@ header.onTop .navbar-toggler-right{
 	background-position: center;
 	background-size: contain;
 	margin: 0 auto 40px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+.partner-bg:hover{
+	filter: sepia(1) saturate(0.25);
+	-webkit-filter: sepia(1) saturate(0.25);
 }
 
 .blogs-news{
@@ -876,9 +894,18 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .blog{
 	position: relative;
-	margin-bottom: 30px;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
-.blogs-news .blog img{
+.blogs-news .blog:hover{
+	background-size: 120%;
 }
 .blogs-news .blog-infos-container{
 	position: absolute;
@@ -915,17 +942,26 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .news{
 	position: relative;
-	margin-bottom: 30px;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
-.blogs-news .news img{
+.blogs-news .news:hover{
+	background-size: 120%;
 }
 .blogs-news .news-infos-container{
 	position: absolute;
 	display: table;
-	width: 220px;
+/*	width: 220px;*/
 	overflow: hidden;
 	top: 0;
-	left: calc(50% - 110px);
+/*	left: calc(50% - 110px);*/
 }
 .blogs-news .news-infos-container .news-infos{
 	padding: 50px 20px 10px;
@@ -1071,7 +1107,7 @@ footer .contact-us button{
 	width: 140px;
 	height: 40px;
 	border: 2px solid rgb(204, 204, 204);;
-	border-radius: 6px;
+	border-radius: 20px;
 	color: #fff;/*rgb(15, 22, 77);*/
 	font-size: 20px;
 	font-weight: bold;
@@ -1079,6 +1115,11 @@ footer .contact-us button{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition-duration: 0.3s;
+}
+footer .contact-us button:hover{
+	color: #000;
+	background-color: #fff;
 }
 footer .contact-us input:focus, footer .contact-us textarea:focus {
 	outline: none;

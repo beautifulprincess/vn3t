@@ -365,8 +365,7 @@ $socials = array(
 			<div class="row">
 <?php foreach ($blogs as $b) { ?>
 				<div class="col-xs-12 col-md-6">
-					<div class="blog">
-						<img src="images/blog/<?php echo $b['img']; ?>">
+					<div class="blog" style="background-image:url(images/blog/<?php echo $b['img']; ?>)">
 						<div class="blog-infos-container">
 							<div class="blog-infos">
 								<p class="blog-title"><?php echo $b['title']; ?></p>
@@ -384,8 +383,7 @@ $socials = array(
 			<div class="row">
 <?php foreach ($newss as $n) { ?>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
-					<div class="news">
-						<img src="images/news/<?php echo $n['img']; ?>">
+					<div class="news" style="background-image:url(images/news/<?php echo $n['img']; ?>)">
 						<div class="news-infos-container">
 							<div class="news-infos">
 								<p class="news-title"><?php echo $n['title']; ?></p>
