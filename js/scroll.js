@@ -46,7 +46,7 @@ $(document).ready(function(){
 		});
 		var wh = $(window).innerHeight();
 		if (showed_roadmap == false && cur_scroll_top > $("#roadmap").offset().top - wh)
-			setTimeout(show_roadmap, 1000);
+			setTimeout(show_roadmap, 100);
 	};
 	$(window).scroll(scroll_processer);
 	scroll_processer();
