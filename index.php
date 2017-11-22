@@ -14,7 +14,7 @@ $problematics = array(
 	array("class" => "icon-security", "title" => "SECURITY")
 );
 $problematics2 = array(
-	array("img" => "s1.jpg", "txt" => "MONETIZE YOUR VALUABLE DATA ASSETS<br>and<br>MACHINE LEARNING ALGORITHMs"),
+	array("img" => "vn3tcoin.png", "txt" => "MONETIZE YOUR VALUABLE DATA ASSETS<br>and<br>MACHINE LEARNING ALGORITHMs"),
 	array("img" => "s2.jpg", "txt" => "SOLUTION FOR PRIVACY, SECURITY, INTELLECTURAL PROPERTY"),
 	array("img" => "s3.jpg", "txt" => "CREDITABLE AND SCALABLE INFRASTRUCTURE")
 );

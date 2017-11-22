@@ -53,9 +53,9 @@ $mail->AltBody = $_REQUEST['message'];
 //$mail->addAttachment('images/phpmailer_mini.png');
 //send the message, check for errors
 if (!$mail->send()) {
-    die(json_encode(array('res' => '300', 'msg' => "Mailer Error: " . $mail->ErrorInfo)));
+    echo json_encode(array('res' => '300', 'msg' => "Mailer Error: " . $mail->ErrorInfo));
 } else {
-    die(json_encode(array('res' => '200', 'msg' => "Message sent!")));
+    echo json_encode(array('res' => '200', 'msg' => "Message sent!"));
     //Section 2: IMAP
     //Uncomment these to save your message in the 'Sent Mail' folder.
     #if (save_mail($mail)) {
