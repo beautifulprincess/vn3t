@@ -86,7 +86,9 @@ function submit_contact_frm(){
 		type: "post",
 		dataType: "json",
 		success: function(resp) {
-			console.log(resp);
+			$("#username").val('');
+			$("#useremail").val('');
+			$("#message").val('');
 		},
 		error: function(err) {
 			console.log(err);
