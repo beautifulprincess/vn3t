@@ -13,6 +13,11 @@ $problematics = array(
 	array("class" => "icon-property", "title" => "INTELLECTURAL<br>PROPERTY"),
 	array("class" => "icon-security", "title" => "SECURITY")
 );
+$problematics2 = array(
+	array("img" => "s1.jpg", "txt" => "MONETIZE YOUR VALUABLE DATA ASSETS<br>and<br>MACHINE LEARNING ALGORITHMs"),
+	array("img" => "s2.jpg", "txt" => "SOLUTION FOR PRIVACY, SECURITY, INTELLECTURAL PROPERTY"),
+	array("img" => "s3.jpg", "txt" => "CREDITABLE AND SCALABLE INFRASTRUCTURE")
+);
 $technologies = array(
 	array("class" => "icon-gpu", "title" => "GPU POOLING &amp;<br>PROOF-OF-ALLOCATION", "content" => "<p class=\"tech-content\">All mining schemes are made to enable the creation of a “supercomputer” composed of clusters of virtualized environments powered by cooperative GPU pooling, created to handle specific calculations using specifications given by GPU power buyers.</p>
 			<p class=\"tech-content\">The proof-of-allocation serves as a method for determining the quantity of processing power allocated to a single virtualized environment.</p>"),
@@ -133,6 +138,7 @@ $socials = array(
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="js/countdown.js"></script>
 	<script>var roadmap_datas = <?php echo json_encode($roadmaps); ?>;</script>
+	<script>var problematic_datas = <?php echo json_encode($problematics2); ?>;</script>
 	<script src="js/main.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
@@ -178,13 +184,27 @@ $socials = array(
 </section>
 <section id="problematic">
 	<h1>PROBLEMATIC</h1>
+<!--
 	<div class="row">
-<?php foreach ($problematics as $prob) { ?>
+<?php /*foreach ($problematics as $prob) { ?>
 		<div class="col col-md-4">
 			<div class="prob-icon <?php echo $prob['class']; ?>"></div>
 			<p><?php echo $prob['title']; ?></p>
 		</div>
-<?php } ?>
+<?php }*/ ?>
+	</div>
+-->
+	<div class="htmleaf-container">
+		<div class="carousel">
+			<figure>
+<?php for ($i = 0; $i < 3; $i++) { foreach ($problematics2 as $prob) { ?>
+				<img src="images/problematic/<?php echo $prob['img']; ?>" alt="">
+<?php } } ?>
+			</figure>
+			<button class="nav prev"><i class="fa fa-angle-left"></i></button>
+			<button class="nav next"><i class="fa fa-angle-right"></i></button>
+			<div class="prob-slider-bg"><div class="prob-txt-container"><p></p></div></div>
+		</div>
 	</div>
 	<!--<p class="amp">&amp;</p>-->
 	<!--<p class="description">The monopoly of giants on structured data</p>-->
@@ -467,6 +487,7 @@ $socials = array(
 <div id="work-in-progress"><div class="work-spinner"></div></div>
 
 	<script src="particles/particles.min.js"></script>
+	<script src="js/slider.js"></script>
 	<script src="particles/app.js"></script>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f504cac8-32a2-4341-9e49-a69d3a0e8452";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>

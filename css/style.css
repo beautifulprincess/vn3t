@@ -1376,3 +1376,98 @@ footer button:focus, footer button:active{
 	color: #000;
 	margin-top: 40px;
 }
+
+section#problematic{
+	padding: 0 0 40px;
+}
+.carousel {
+  margin: 20px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+	position: relative;
+}
+.carousel figure {
+  margin: 0;
+  width: 70%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel button {
+	position: absolute;
+	background: rgba(240, 240, 240, 0.2);
+	border: 1px solid #ddd;
+	color: #ddd;
+	top: calc(50% - 20px);
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	text-align: center;
+	display: block;
+	font-size: 30px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.carousel button.prev {
+	left: calc(15% - 50px);
+}
+.carousel button.next {
+	left: calc(85% + 10px);
+}
+button:focus, button:active{
+	outline: none;
+}
+.prob-slider-bg{
+	position: absolute;
+	left: 15%;
+	top: 0px;
+	width: 70%;
+	height: 100%;
+	background-image: url(../images/problematic/sb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+.prob-slider-bg .prob-txt-container{
+	height: 100%;
+	display: table;
+	margin: 0 auto;
+}
+.prob-slider-bg p{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 22px;
+	height: 100%;
+}
