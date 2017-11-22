@@ -47,7 +47,7 @@ function carousel(root) {
 			clearTimeout(tm);
 			clearTimeout(tmt);
 			tmt = setTimeout(chgTxt, 500);
-			tm = setTimeout(onClick, 3000, true);
+			tm = setTimeout(onClick, 5000, true);
 		}
 		function chgTxt()
 		{
@@ -55,7 +55,7 @@ function carousel(root) {
 			$('.prob-slider-bg').css({opacity: 1});
 		}
 		tmt = setTimeout(chgTxt, 500);
-		tm = setTimeout(onClick, 3000, true);
+		tm = setTimeout(onClick, 5000, true);
 	}
 	function rotateCarousel(imageIndex) {
 		figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
