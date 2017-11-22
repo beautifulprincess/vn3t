@@ -1148,6 +1148,9 @@ footer .contact-us button:hover{
 footer .contact-us input:focus, footer .contact-us textarea:focus {
 	outline: none;
 }
+footer .contact-us input:visited{
+	background-color: transparent;
+}
 footer button:focus, footer button:active{
 	outline: none;
 }
@@ -1468,7 +1471,7 @@ button:focus, button:active{
 	display: table-cell;
 	vertical-align: middle;
 	color: #fff;
-	font-size: 22px;
+	font-size: 34px;
 	height: 100%;
 }
 @media (max-width: 680px)
