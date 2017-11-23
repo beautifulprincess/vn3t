@@ -46,9 +46,10 @@ $mail->addAddress('juliafodor828@gmail.com', 'Julia Fodor');
 $mail->Subject = 'From VN3T Customer: ' . $_REQUEST['username'] . '(' . $_REQUEST['useremail'] . ')';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML(file_get_contents('email_contents.html'), __DIR__);
+//$mail->msgHTML(file_get_contents('email_contents.html'), __DIR__);
 //Replace the plain text body with one created manually
-$mail->AltBody = $_REQUEST['message'];
+//$mail->AltBody = $_REQUEST['message'];
+$mail->msgHTML(preg_replace("/\{\{message\}\}/", $_REQUEST['message'], file_get_contents('email_contents.html')));
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
 //send the message, check for errors
