@@ -933,7 +933,6 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .blog-infos-container{
 	position: absolute;
-	display: table;
 	width: 300px;
 	overflow: hidden;
 	top: 0;
@@ -941,13 +940,15 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .blog-infos-container .blog-infos{
 	padding: 50px 20px 10px;
-	display: table-cell;
 	text-align: left;
 }
 .blogs-news .blog-infos-container .blog-infos .blog-title{
 	font-size: 23px;
 	margin: 0;
 	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .blogs-news .blog-infos-container .blog-infos .blog-past{
 	font-size: 16px;
@@ -963,6 +964,9 @@ header.onTop .navbar-toggler-right{
 	text-align: justify;
 	text-overflow: ellipsis;
 	color: #fff;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 .blogs-news .news{
 	position: relative;
@@ -981,21 +985,22 @@ header.onTop .navbar-toggler-right{
 }
 .blogs-news .news-infos-container{
 	position: absolute;
-	display: table;
-/*	width: 220px;*/
+	width: 300px;/*220px;*/
 	overflow: hidden;
 	top: 0;
 /*	left: calc(50% - 110px);*/
 }
 .blogs-news .news-infos-container .news-infos{
 	padding: 50px 20px 10px;
-	display: table-cell;
 	text-align: left;
 }
 .blogs-news .news-infos-container .news-infos .news-title{
 	font-size: 23px;
 	margin: 0;
 	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .blogs-news .news-infos-container .news-infos .news-past{
 	font-size: 16px;
@@ -1011,6 +1016,12 @@ header.onTop .navbar-toggler-right{
 	text-align: justify;
 	text-overflow: ellipsis;
 	color: #fff;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.blogs-news .news-infos-container .news-infos .news-content::first-line{
+	padding-left: 10px;
 }
 .blogs-news .blog-col, .blogs-news .news-col{
 	padding-bottom: 10px;
