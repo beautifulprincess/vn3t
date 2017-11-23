@@ -15,7 +15,7 @@ $problematics = array(
 );
 $problematics2 = array(
 	array("img" => "vn3tcoin.png", "txt" => "MONETIZE YOUR VALUABLE DATA ASSETS<br>and<br>MACHINE LEARNING ALGORITHMs"),
-	array("img" => "s2.jpg", "txt" => "SOLUTION FOR PRIVACY, SECURITY, INTELLECTURAL PROPERTY"),
+	array("img" => "s2.jpg", "txt" => "SOLUTION FOR PRIVACY, SECURITY, INTELLECTUAL PROPERTY"),
 	array("img" => "s3.jpg", "txt" => "CREDITABLE AND SCALABLE INFRASTRUCTURE")
 );
 $technologies = array(
