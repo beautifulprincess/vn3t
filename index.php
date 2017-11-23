@@ -78,11 +78,11 @@ $tech_members = array(
 	array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'linkedin' => '#')
 );
 $advisor_members = array(
-	array('name' => 'Montréal blockchain supercluster', 'title' => 'AI', 'photo' => '1.jpg', 'linkedin' => '#'),
-	array('name' => 'Montréal AI supercluster lead by Element AI', 'title' => 'AI', 'photo' => '2.jpg', 'linkedin' => '#'),
-	array('name' => 'Montreal AI &amp; Montreal AI Académie', 'title' => 'AI', 'photo' => '3.jpg', 'linkedin' => '#'),
-	array('name' => 'R&amp;D: CNRC-PARI', 'title' => 'AI', 'photo' => '4.jpg', 'linkedin' => '#'),
-	array('name' => 'Université Laval', 'title' => 'AI', 'photo' => '5.jpg', 'linkedin' => '#')
+	array('name' => '', 'title' => '', 'photo' => '1.jpg', 'linkedin' => '#'),
+	array('name' => '', 'title' => '', 'photo' => '2.jpg', 'linkedin' => '#'),
+	array('name' => '', 'title' => '', 'photo' => '3.jpg', 'linkedin' => '#'),
+	array('name' => '', 'title' => '', 'photo' => '4.jpg', 'linkedin' => '#'),
+	array('name' => '', 'title' => '', 'photo' => '5.jpg', 'linkedin' => '#')
 );
 $administratives = array(
 	array('img' => '4.png', 'title' => 'Accounting: BDO (Canada-Gibralta)', 'link' => 'https://www.bdo.com'),
