@@ -36,18 +36,18 @@ function carousel(root) {
 	function setupNavigation() {
 		$(".carousel button").click(onClick);
 		var tm, tmt;
-		function onClick(is_auto) {
-			if (is_auto || $(this).hasClass('next')) {
-				currImage++;
-			} else {
+		function onClick() {
+			if ($(this).hasClass('prev')) {
 				currImage--;
+			} else {
+				currImage++;
 			}
 			rotateCarousel(currImage);
 			$('.prob-slider-bg').css({opacity: 0});
 			clearTimeout(tm);
 			clearTimeout(tmt);
 			tmt = setTimeout(chgTxt, 500);
-			tm = setTimeout(onClick, 5000, true);
+			tm = setTimeout(onClick, 5000);
 		}
 		function chgTxt()
 		{
@@ -55,7 +55,7 @@ function carousel(root) {
 			$('.prob-slider-bg').css({opacity: 1});
 		}
 		tmt = setTimeout(chgTxt, 500);
-		tm = setTimeout(onClick, 5000, true);
+		tm = setTimeout(onClick, 5000);
 	}
 	function rotateCarousel(imageIndex) {
 		figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
