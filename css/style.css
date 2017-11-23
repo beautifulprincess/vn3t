@@ -923,13 +923,13 @@ header.onTop .navbar-toggler-right{
 	margin: 0 auto 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: auto 100%;
 	overflow: hidden;
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
 .blogs-news .blog:hover{
-	background-size: 120%;
+	background-size: auto 120%;
 }
 .blogs-news .blog-infos-container{
 	position: absolute;
@@ -975,13 +975,13 @@ header.onTop .navbar-toggler-right{
 	margin: 0 auto 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: auto 100%;
 	overflow: hidden;
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
 .blogs-news .news:hover{
-	background-size: 120%;
+	background-size: auto 120%;
 }
 .blogs-news .news-infos-container{
 	position: absolute;
