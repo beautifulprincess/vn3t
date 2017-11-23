@@ -63,6 +63,7 @@ $exe_members = array(
 );
 $tech_members = array(
 	array('name' => 'Dmytro Sytnik', 'title' => 'Technical ICO<br>manager', 'photo' => '1.jpg', 'linkedin' => '#'),
+	array('name' => 'Ahmed Al-Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'linkedin' => '#'),
 	array('name' => 'Julia Fodor', 'title' => 'Senior trooper developer', 'photo' => '2.jpg', 'linkedin' => 'http://beautifulprincess.000webhostapp.com/'),
 	array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'linkedin' => '#'),
 	array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'linkedin' => '#'),
@@ -71,7 +72,6 @@ $tech_members = array(
 	array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'linkedin' => '#'),
-	array('name' => 'Ahmed Al-Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'linkedin' => '#'),
 	array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'linkedin' => '#'),
 	array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'linkedin' => '#'),
