@@ -1504,3 +1504,188 @@ button:focus, button:active{
 	}
 }
 
+.solution{
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: auto 200px;
+	position: relative;
+	padding-top: 200px;
+	width: 220px;
+	margin: 0 auto 40px;
+}
+.solution-content{
+	position: absolute;
+	display: none;
+	width: 480px;
+	height: 220px;
+	background: #fff;
+	border: 4px solid #7599E7;
+	top: -10px;
+	left: 240px;
+	z-index: 1;
+	padding: 0 20px;
+}
+.solution-content:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 20px solid #7599E7;
+	top: 100px;
+	left: -24px;
+}
+.solution-content:after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 20px solid #fff;
+	top: 100px;
+	left: -16px;
+}
+.solution-content.solution-content-2:before{
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #7599E7;
+	border-right: none;
+	left: 476px;
+}
+.solution-content.solution-content-2:after{
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #fff;
+	border-right: none;
+	left: 468px;
+}
+.solution-content.solution-content-3:before{
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #7599E7;
+	border-right: none;
+	left: 476px;
+}
+.solution-content.solution-content-3:after{
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #fff;
+	border-right: none;
+	left: 468px;
+}
+.solution:hover .solution-content{
+	display: table;
+}
+.solution:hover .solution-content:hover{
+	display: none;
+}
+.solution-content h3{
+	display: table-cell;
+	vertical-align: middle;
+	color: rgb(41, 43, 114);
+	font-size: 22px;
+	text-align: left;
+}
+.solution-content h3 p{
+	color: #000;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.solution-content-0{
+}
+.solution-content-1{
+}
+.solution-content-2{
+	left: -500px;
+}
+.solution-content-3{
+	left: -500px;
+}
+@media (max-width: 991px){
+	.solution-content-0{
+	}
+	.solution-content-1{
+		left: -500px;
+	}
+	.solution-content-2{
+		left: 240px;
+	}
+	.solution-content-3{
+		left: -500px;
+	}
+	.solution-content.solution-content-1:before{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 20px solid #7599E7;
+		border-right: none;
+		left: 476px;
+	}
+	.solution-content.solution-content-1:after{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 20px solid #fff;
+		border-right: none;
+		left: 468px;
+	}
+	.solution-content.solution-content-2:before{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 20px solid #7599E7;
+		border-left: none;
+		left: -24px;
+	}
+	.solution-content.solution-content-2:after{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 20px solid #fff;
+		border-left: none;
+		left: -16px;
+	}
+}
+@media (max-width: 810px){
+	.solution-content-0{
+		left: 190px;
+	}
+	.solution-content-1{
+		left: -450px;
+	}
+	.solution-content-2{
+		left: 190px;
+	}
+	.solution-content-3{
+		left: -450px;
+	}
+	.solution:hover .solution-content:hover{
+		display: table;
+	}
+}
+@media (max-width: 767px){
+	.solution-content{
+		position: relative;
+		display: block;
+		left: calc(50% - 240px);
+		top: auto;
+		margin-top: 40px;
+		padding: 20px;
+		height: auto;
+	}
+	.solution-content:before{
+		border-top: none !important;
+		border-left: 10px solid transparent !important;
+		border-right: 10px solid transparent !important;
+		border-bottom: 20px solid #7599E7 !important;
+		left: calc(50% - 10px) !important;
+		top: -24px !important;
+	}
+	.solution-content:after{
+		border-top: none !important;
+		border-left: 10px solid transparent !important;
+		border-right: 10px solid transparent !important;
+		border-bottom: 20px solid #fff !important;
+		left: calc(50% - 10px) !important;
+		top: -16px !important;
+	}
+}

@@ -115,6 +115,12 @@ $socials = array(
 	array('class' => 'medium', 'link' => 'https://medium.com/@vn3ttech/decentralized-marketplace-for-global-data-network-e94e4fa1707b'),
 	array('class' => 'youtube-play', 'link' => 'https://www.youtube.com/channel/UCn0BOghrGyl61inu6XdFEpA')
 );
+$solutions = array(
+	array("icon" => "1.png", "title" => "Distributed Marketplace", "content" => "VN3T provides a free market approach which will allow users and providers to simultaneously sell and buy data and algorithm services in the form of multi-layered transactions to build a more complex service, or to extract more valuable data. These operations are all handled in a powerful distributed ledger - a virtual environment of GPU power - that will permit peer-2-peer transactions."),
+	array("icon" => "2.png", "title" => "Data Visualization Tool", "content" => "This enables the data provider to tag the key performance indicator (KPI) that can be used and propose the best statistic calculation layer that can be extracted. These statistical calculations become the data endpoint streams that are sold either by volume, bulk or time method, which is set by the data provider."),
+	array("icon" => "3.png", "title" => "Standardized Data Channels", "content" => "In a VN3T network, all Input/Output streams follow the standardized, abstracted stream format or “channel”. This makes every data or algorithm model easily sellable/scalable and each model is enabled to create a multi-layered cross service based on the “building block” approach."),
+	array("icon" => "4.png", "title" => "Sandbox", "content" => "Sandbox is the “in-network” training platform for new algorithms. The sandbox will aid the user to visualize the output data stream and to tag sellable data KPI using the data visualization tool, creating a standard output which can be used to evaluate and determine its economic value.")
+);
 ?>
 <!doctype html>
 <html>
@@ -208,6 +214,23 @@ $socials = array(
 	</div>
 	<!--<p class="amp">&amp;</p>-->
 	<!--<p class="description">The monopoly of giants on structured data</p>-->
+</section>
+<section class="solution-section">
+	<h1>SOLUTIONS</h1>
+	<div class="row">
+<?php foreach($solutions as $i => $item) { ?>
+		<div class="col col-sm-12 col-md-6 col-lg-3">
+			<div class="solution solution-<?php echo $i; ?>" style="background-image:url(images/solution/<?php echo $item['icon']; ?>);">
+				<div class="solution-content solution-content-<?php echo $i; ?>">
+					<h3>
+						<?php echo $item['title']; ?>
+						<p><?php echo $item['content']; ?></p>
+					</h3>
+				</div>
+			</div>
+		</div>
+<?php } ?>
+	</div>
 </section>
 <section class="technology">
 	<h1>TECHNOLOGY</h1>
