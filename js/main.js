@@ -70,6 +70,13 @@ $(document).ready(function(){
 			$(".answer" + qid).addClass("opened");
 		}
 	});
+	var closg_bio_dlg = function(){
+		$("#biodialog").animate({top: -800}, 400, 'swing', function(){
+			$("#biodialog_bg").hide();
+			$("body").css( { overflow: 'auto'} );
+		});
+	};
+	$("#biodialog_bg, .biodlg-close-btn").click(closg_bio_dlg);
 });
 $(window).bind("load", function () {
 	$('#work-in-progress').fadeOut(100);
@@ -96,4 +103,24 @@ function submit_contact_frm(){
 	});
 
 	return false;
+}
+function show_bio(mType, mNo)
+{
+	if (event.target.tagName == "A" || event.target.tagName == "I")
+		return;
+	var wh = $(window).innerHeight();
+	$("#biodialog img").attr("src", "/images/member/" + mType + "/" + bios[mType][mNo].photo);
+	$("#biodialog .name").html(bios[mType][mNo].name);
+	$("#biodialog .role").html(bios[mType][mNo].title.replace(/<br>/, ' '));
+	$("#biodialog .detail").html(bios[mType][mNo].detail);
+	var socials = "";
+	for(var elem_key in bios[mType][mNo].socials)
+	{
+		socials += "<a href='" + bios[mType][mNo].socials[elem_key] + "' target='_blank'><i class='fa fa-" + elem_key + "'></i></a>";
+	}
+	$("#biodialog .socials").html(socials);
+	$("#biodialog_bg").show();
+	$("body").css( { overflow: 'hidden'} );
+	$("#biodialog").animate({top: (wh - 600) / 2}, 400, 'swing', function(){
+	});
 }

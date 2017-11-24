@@ -53,37 +53,6 @@ $roadmaps = array(
 	array("date" => "2021 Q1", "content" => "Personal information pooling Beta,"),
 	array("date" => "2021 Q4", "content" => "Personal information pooling Alpha, 350 Millions trade volume")
 );
-$exe_members = array(
-	array('name' => 'Jean-Philippe Beaudet', 'title' => 'President<br>Co-Founder &amp; CTO', 'photo' => '1.jpg', 'linkedin' => 'https://www.linkedin.com/in/jean-philippe-beaudet-12472884/'),
-	array('name' => 'Yves Lamarre', 'title' => 'Vice President/CBDO<br>Co-Founder', 'photo' => '2.jpg', 'linkedin' => 'https://www.linkedin.com/in/ylvirtuba#'),
-	array('name' => 'Mathieu Fanoni', 'title' => 'COO / Co-Founder', 'photo' => '3.jpg', 'linkedin' => 'https://www.linkedin.com/in/mathieufanoni'),
-	array('name' => 'Daniel Bastien', 'title' => 'CFO', 'photo' => '4.jpg', 'linkedin' => 'https://www.linkedin.com/in/daniel-bastien-63583b6/'),
-	array('name' => 'Dominique-Sébastien Forest', 'title' => 'CBDO', 'photo' => '5.jpg', 'linkedin' => 'https://www.linkedin.com/in/dominiqueforest/'),
-	array('name' => 'In Process', 'title' => 'CAIO', 'photo' => '6.jpg', 'linkedin' => '#')
-);
-$tech_members = array(
-	array('name' => 'Dmytro Sytnik', 'title' => 'Technical ICO<br>manager', 'photo' => '1.jpg', 'linkedin' => '#'),
-	array('name' => 'Ahmed Al-Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'linkedin' => '#'),
-	array('name' => 'Julia Fodor', 'title' => 'Senior trooper developer', 'photo' => '2.jpg', 'linkedin' => 'http://beautifulprincess.000webhostapp.com/'),
-	array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'linkedin' => '#'),
-	array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'linkedin' => '#'),
-	array('name' => 'Eduard Dimitru', 'title' => 'Front-end artists', 'photo' => '5.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'API ninja', 'photo' => '6.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'linkedin' => '#'),
-	array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'linkedin' => '#'),
-	array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'linkedin' => '#')
-);
-$advisor_members = array(
-	array('name' => '', 'title' => '', 'photo' => '1.jpg', 'linkedin' => '#'),
-	array('name' => '', 'title' => '', 'photo' => '2.jpg', 'linkedin' => '#'),
-	array('name' => '', 'title' => '', 'photo' => '3.jpg', 'linkedin' => '#'),
-	array('name' => '', 'title' => '', 'photo' => '4.jpg', 'linkedin' => '#'),
-	array('name' => '', 'title' => '', 'photo' => '5.jpg', 'linkedin' => '#')
-);
 $administratives = array(
 	array('img' => '4.png', 'title' => 'Accounting: BDO (Canada-Gibralta)', 'link' => 'https://www.bdo.com'),
 	array('img' => '2.png', 'title' => 'Legal: Fasken Martineau Québec', 'link' => 'http://www.fasken.com')
@@ -116,10 +85,118 @@ $socials = array(
 	array('class' => 'youtube-play', 'link' => 'https://www.youtube.com/channel/UCn0BOghrGyl61inu6XdFEpA')
 );
 $solutions = array(
-	array("icon" => "1.png", "title" => "Distributed Marketplace", "content" => "VN3T provides a free market approach which will allow users and providers to simultaneously sell and buy data and algorithm services in the form of multi-layered transactions to build a more complex service, or to extract more valuable data. These operations are all handled in a powerful distributed ledger - a virtual environment of GPU power - that will permit peer-2-peer transactions."),
-	array("icon" => "2.png", "title" => "Data Visualization Tool", "content" => "This enables the data provider to tag the key performance indicator (KPI) that can be used and propose the best statistic calculation layer that can be extracted. These statistical calculations become the data endpoint streams that are sold either by volume, bulk or time method, which is set by the data provider."),
-	array("icon" => "3.png", "title" => "Standardized Data Channels", "content" => "In a VN3T network, all Input/Output streams follow the standardized, abstracted stream format or “channel”. This makes every data or algorithm model easily sellable/scalable and each model is enabled to create a multi-layered cross service based on the “building block” approach."),
-	array("icon" => "4.png", "title" => "Sandbox", "content" => "Sandbox is the “in-network” training platform for new algorithms. The sandbox will aid the user to visualize the output data stream and to tag sellable data KPI using the data visualization tool, creating a standard output which can be used to evaluate and determine its economic value.")
+	array("icon" => "s1.png", "title" => "Distributed Marketplace", "content" => "VN3T provides a free market approach which will allow users and providers to simultaneously sell and buy data and algorithm services in the form of multi-layered transactions to build a more complex service, or to extract more valuable data. These operations are all handled in a powerful distributed ledger - a virtual environment of GPU power - that will permit peer-2-peer transactions."),
+	array("icon" => "s2.png", "title" => "Data Visualization Tool", "content" => "This enables the data provider to tag the key performance indicator (KPI) that can be used and propose the best statistic calculation layer that can be extracted. These statistical calculations become the data endpoint streams that are sold either by volume, bulk or time method, which is set by the data provider."),
+	array("icon" => "s3.png", "title" => "Standardized Data Channels", "content" => "In a VN3T network, all Input/Output streams follow the standardized, abstracted stream format or “channel”. This makes every data or algorithm model easily sellable/scalable and each model is enabled to create a multi-layered cross service based on the “building block” approach."),
+	array("icon" => "s4.png", "title" => "Sandbox", "content" => "Sandbox is the “in-network” training platform for new algorithms. The sandbox will aid the user to visualize the output data stream and to tag sellable data KPI using the data visualization tool, creating a standard output which can be used to evaluate and determine its economic value.")
+);
+$bios = array(
+	"executive" => array(
+		array('name' => 'Jean-Philippe Beaudet', 'title' => 'President<br>Co-Founder &amp; CTO', 'photo' => '1.jpg', 'detail' => "Becoming an entrepreneur was the next logical step for Jean-Philippe Beaudet and even more so as the CTO and co-founder of S3R3NITY Technologies. The firm is specialized in software development services which are directly aligned with the young man’s passions, experiences and ambitions. Mr. Beaudet is a highly skilled professional with extensive experience in software management, operations development, human resources management as well as design and implementation of technological pipelines. As a result of his previous work and studies, Mr. Beaudet became proficient in multiple programming languages, platforms and software such as: Javascript web development software, Node.js, HTML5, CSS3, jQuery, Python and Java. This specific level of knowledge has allowed him to further develop his capacities in software architecture and game development. Mr. Beaudet’s ability to effectively communicate otherwise intricate concepts and ideas truly makes him an asset for transmitting intelligible data and information to his team and customers.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/jean-philippe-beaudet-12472884/')),
+		array('name' => 'Yves Lamarre', 'title' => 'Vice President/CBDO<br>Co-Founder', 'photo' => '2.jpg', 'detail' => "Former member of the Canadian Armed Forces. Yves Lamarre spent the last 12 years
+doing business development for physical and online retailers, mainly in Nicaragua and
+Spain. He was involved in real estate development in Nicaragua. He developed and built
+“International Call Center” and online based projects. When he came back to Canada, he
+decided to work on his project; Virtuba; which is a digital safety-box for individuals and
+14
+corporations. From the need to ensure proper security of this digital safety-box, Vn3t
+Technologies was born. With this blockchain technology, Vn3t Technologies is able to
+provide stronger level of security of data than the cloud and servers can do. As well, it
+respects the core element of this unique ecosystem; PRIVACY. As a strong advocate for
+privacy Yves Lamarre believe that every business should provide security and privacy to
+its customers. That is exactly what Vn3t Technologies et Virtuba are all about.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/ylvirtuba#')),
+		array('name' => 'Mathieu Fanoni', 'title' => 'COO / Co-Founder', 'photo' => '3.jpg', 'detail' => "Mathieu Fanoni has an acute passion for new technologies and new ways of
+implementing them; he excels in providing strategic support and defines himself as an
+\"evangelist for AI and blockchain technologies\". As a fierce believer in new digital
+technologies, he would say they are an indispensable tool to solve the current challenges
+the world faces in regards of economic issues, environment sustainability and/or global
+security for examples. His strong experiences in positions such as VP at G.I.P. and now VP
+at S3R3NITY technologies have allowed him to reinforce his natural aptitude for
+leadership. Mr. Fanoni’s versatility and ability to simultaneously manage multiple teams
+and files enables both him and his team to easily adapt to various environment and
+clientele.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/mathieufanoni')),
+		array('name' => 'Daniel Bastien', 'title' => 'CFO', 'photo' => '4.jpg', 'detail' => "Strong experience in structuring corporate, legal and accounting environment for web
+based projects. He was a founding member of a web based company. At the start, they
+were 4 people, when he left the company, they were 200 employees. He was capable to
+work with multiple partners in various continents. Have extensive experience in Europe,
+Latin America and Asia. He has a strong experience in implementation of stimulating
+work environment.
+15
+Specialties: International corporate, accounting and fiscal planning. Risk analysis of
+emerging markets. Government and Tax agencies negotiation. Bring start-up to multi-
+million dollars company.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/daniel-bastien-63583b6/')),
+		array('name' => 'Dominique-Sébastien Forest', 'title' => 'CBDO', 'photo' => '5.jpg', 'detail' => "Dominique-Sébastien Forest – Strategic Senior Executive Advisor
+As a Strategic Senior Executive Advisor; Dominique-Sébastien Forest works with CEOs and
+Executive Teams with a comprehensive approach, supporting his clients by taking an
+active role within the organization; generating revenues, raising capital, finding fitting
+talent and creating the appropriate communication channels. His involvement includes:
+Strategic Planning, Corporate Development, Business Development, PR & Product Plans,
+Sales Funnel Optimization, Operational Efficiency, and Scalability & Executive Coaching. In
+the past, Mr. Forest worked with Edelman Communications, was Chairman of the
+Internet Advertising Bureau of Canada, sat on the advisory boards of the Canadian
+Innovation Exchange and Next Media. He also mentored young entrepreneurs at Founder
+Fuel – a business start-up accelerator program. Last but most certainly not least, Mr.
+Forest spent three years as Vice-President, National Digital Solutions for Transcontinental
+Media, where he was responsible for the digital strategy, including the diversification of
+product offerings and the acceleration and growth of the New Media and Digital
+Solutions Group. During his mandate, the company won multiple awards including
+Marketing Magazine’s 2012 Media Player of the Year.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/dominiqueforest/')),
+		array('name' => 'In Process', 'title' => 'CAIO', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+	),
+	"technical" => array(
+		array('name' => 'Dmytro Sytnik', 'title' => 'Technical ICO<br>manager', 'photo' => '1.jpg', 'detail' => "Human Resource Management: Research and define job descriptions to fill department resource needs. Screen and recommend interview candidates. Integrate new hires into teams and processes.<br>
+Project discovery and planning: Guide work from client needs and idea to goals and delivery. Pull together team leaders and account staff to research and define new products and budget. Build and delegate work plans, communicating progress to account executives.<br>
+Accountability: Set clear expectations and goals for project teams. Track progress against timeline, milestones and budget, revise as needed.<br><br>
+Skill sets: <br>
+- JavaScript ES6+<br>
+- React / React Native / Angular / Meteor / CoffeeScript / Node.js Express Framework<br>
+- Redux for JavaScript<br>
+- Less, CSS3, Bootstrap<br>
+- D3, Three.js<br>
+- HTML5<br>
+- MongoDB, MySQL, Postgresql, MSSQL<br>
+- WebGL<br>
+- TypeScript/Flow<br>
+- Node.js + Express + ASP.NET + C# + PHP + Laravel + Symfony +Java + Spring<br>
+- Scala + Akka<br>
+- Blockchain, Smart Contract, Bitcoin, Ethereum, Litecoin, Ripple, Truffle, Bitgo, Kraken, Galileo<br>
+--TOOLS--<br>
+- Webpack/Gulp<br>
+- Git / Bitbucket / Gitlab<br>
+- Jest, Karma, Mocha, Jasmine, Enzyme<br>
+- Selenium<br>
+- WebStorm / PHPStore / PyCharm<br>
+- Jira/Asana/Redmine<br>
+- Heroku / AWS / Godday / Digital Ocean / Google Cloud", 'socials' => array('linkedin' => '#')),
+		array('name' => 'Ahmed Al-Bayati', 'title' => 'Zealot<br>Community Manager &amp; Evangelist', 'photo' => '10.jpg', 'detail' => "Managing and directing Vn3t's internal and external communications. Lead corporate multimedia divisions and technical departments for develop and execute marketing campaigns that build memorable brands.<br>
+Anayzing business architecture and marketing strategies of company, build web sites, social medias and other advertising campaigns so that more investors and affiliates have interest to our idea and marketing strategy.<br>
+Expert in the technical, conceptual and content development of sales-driving collateral.<br><br>
+Skills:<br>
+Marketing Strategies and Campaigns<br>
+Corporate Communications<br>
+Web Content development<br>
+Market Research<br>
+Development of Training Materials", 'socials' => array('linkedin' => '#')),
+		array('name' => 'Julia Fodor', 'title' => 'Senior trooper developer', 'photo' => '2.jpg', 'detail' => "I am a full stack web developer with over 10 years experience of working history.<br><br>Main Skills :<br>✓ Basic Web Skills : JavaScript / jQuery / PHP / HTML / CSS / SASS<br>✓ JavaScript Frameworks : Angular / Vue / Node / Express Framework<br>✓ PHP Frameworks : Laravel / CodeIgniter / Symfony / Yii / CakePHP<br>✓ WebGL Skills : ThreeJS / BabylonJS / Canvas<br>✓ Databases: MongoDB / MySQL / Sqlite / DB Schema<br>✓ Cloud Computing Technologies: Heroku / AWS / EC2 / Google Cloud / Digital Ocean<br><br>I am specialist for AngularJs and Vue.js in frontend development and PHP, nodeJS frameworks in backend development.<br><br>My goal is to provide 100% highest quality of work to my clients.<br><br>I like challenging hard and big projects.", 'socials' => array('linkedin' => 'http://beautifulprincess.000webhostapp.com/')),
+		array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'Eduard Dimitru', 'title' => 'Front-end artists', 'photo' => '5.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'API ninja', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+	),
+	"advisory" => array(
+		array('name' => '', 'title' => '', 'photo' => '1.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => '', 'title' => '', 'photo' => '2.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => '', 'title' => '', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => '', 'title' => '', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => '', 'title' => '', 'photo' => '5.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+	),
 );
 ?>
 <!doctype html>
@@ -145,6 +222,7 @@ $solutions = array(
 	<script src="js/countdown.js"></script>
 	<script>var roadmap_datas = <?php echo json_encode($roadmaps); ?>;</script>
 	<script>var problematic_datas = <?php echo json_encode($problematics2); ?>;</script>
+	<script>var bios = <?php echo json_encode($bios); ?>;</script>
 	<script src="js/main.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
@@ -220,6 +298,7 @@ $solutions = array(
 	<div class="row">
 <?php foreach($solutions as $i => $item) { ?>
 		<div class="col col-sm-12 col-md-6 col-lg-3">
+			<h3><?php echo $item['title']; ?></h3>
 			<div class="solution solution-<?php echo $i; ?>" style="background-image:url(images/solution/<?php echo $item['icon']; ?>);">
 				<div class="solution-content solution-content-<?php echo $i; ?>">
 					<h3>
@@ -323,14 +402,14 @@ $solutions = array(
 <section id="members">
 	<h1>EXECUTIVE MEMBERS</h1>
 	<div class="row exe-members">
-<?php foreach ($exe_members as $i => $em) { ?>
+<?php foreach ($bios['executive'] as $i => $em) { ?>
 		<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3<?php echo $i == 4 ? ' offset-lg-3' : ''; ?>">
-			<div class="circle-dashed exe-member" style="background-image: url(images/member/executive/<?php echo $em['photo']; ?>);">
+			<div class="circle-dashed exe-member" style="background-image: url(images/member/executive/<?php echo $em['photo']; ?>);" onclick="show_bio('executive', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
 						<p><?php echo $em['title']; ?></p>
 						<div class="member-soicals">
-							<a href="<?php echo $em['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="<?php echo $em['socials']['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
 						</div>
 					</div>
 				</div>
@@ -341,14 +420,14 @@ $solutions = array(
 	</div>
 	<h1>TECHNICAL TEAM</h1>
 	<div class="row tech-members">
-<?php foreach ($tech_members as $i => $tm) { ?>
+<?php foreach ($bios['technical'] as $i => $tm) { ?>
 		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-2<?php echo $i == 12 ? " offset-lg-4 offset-md-3 offset-sm-2" : ''; ?>">
-			<div class="circle-dashed tech-member" style="background-image: url(images/member/technical/<?php echo $tm['photo']; ?>);">
+			<div class="circle-dashed tech-member" style="background-image: url(images/member/technical/<?php echo $tm['photo']; ?>);" onclick="show_bio('technical', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
 						<p><?php echo $tm['title']; ?></p>
 						<div class="member-soicals">
-							<a href="<?php echo $tm['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="<?php echo $tm['socials']['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
 						</div>
 					</div>
 				</div>
@@ -374,14 +453,14 @@ $solutions = array(
 <section id="advisory">
 	<h1>ADVISORY TEAM</h1>
 	<div class="row">
-<?php foreach ($advisor_members as $i => $am) { ?>
+<?php foreach ($bios['advisory'] as $i => $am) { ?>
 		<div class="col col-xs-12 col-sm-4 col-lg-2<?php echo $i == 0 ? " offset-lg-1" : ""; echo $i == 3 ? " offset-sm-2 offset-lg-0" : ""; ?>">
-			<div class="circle-dashed adv-member" style="background-image: url(images/member/advisory/<?php echo $am['photo']; ?>);">
+			<div class="circle-dashed adv-member" style="background-image: url(images/member/advisory/<?php echo $am['photo']; ?>);" onclick="show_bio('advisory', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
 						<p><?php echo $am['title']; ?></p>
 						<div class="member-soicals">
-							<a href="<?php echo $am['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="<?php echo $am['socials']['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
 						</div>
 					</div>
 				</div>
@@ -506,6 +585,17 @@ $solutions = array(
 		</div>
 	</div>
 </footer>
+
+<div id="biodialog_bg"></div>
+<div id="biodialog" title="VN3T Member">
+	<i class="biodlg-close-btn fa fa-close"></i>
+	<img>
+	<p class="name"></p>
+	<p class="role"></p>
+	<p class="detail"></p>
+	<div class="socials">
+	</div>
+</div>
 
 <div id="work-in-progress"><div class="work-spinner"></div></div>
 

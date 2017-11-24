@@ -934,13 +934,21 @@ header.onTop .navbar-toggler-right{
 .blogs-news .blog-infos-container{
 	position: absolute;
 	width: 300px;
+	height: 200px;
 	overflow: hidden;
 	top: 0;
 	left: calc(50% - 150px);
+	transition-duration: 0.3s;
+}
+.blogs-news .blog-infos-container:hover{
+	background-color: rgba(0, 0, 0, .3);
 }
 .blogs-news .blog-infos-container .blog-infos{
 	padding: 50px 20px 10px;
 	text-align: left;
+}
+.blogs-news .blog-infos-container .blog-infos p{
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 .blogs-news .blog-infos-container .blog-infos .blog-title{
 	font-size: 23px;
@@ -953,7 +961,7 @@ header.onTop .navbar-toggler-right{
 .blogs-news .blog-infos-container .blog-infos .blog-past{
 	font-size: 16px;
 	margin: 0;
-	color: #000;
+	color: #ddd;
 }
 .blogs-news .blog-infos-container .blog-infos .blog-content{
 	height: 64px;
@@ -986,13 +994,21 @@ header.onTop .navbar-toggler-right{
 .blogs-news .news-infos-container{
 	position: absolute;
 	width: 300px;/*220px;*/
+	height: 200px;
 	overflow: hidden;
 	top: 0;
 /*	left: calc(50% - 110px);*/
+	transition-duration: 0.3s;
+}
+.blogs-news .news-infos-container:hover{
+	background-color: rgba(0, 0, 0, .3);
 }
 .blogs-news .news-infos-container .news-infos{
 	padding: 50px 20px 10px;
 	text-align: left;
+}
+.blogs-news .news-infos-container .news-infos p{
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 .blogs-news .news-infos-container .news-infos .news-title{
 	font-size: 23px;
@@ -1005,7 +1021,7 @@ header.onTop .navbar-toggler-right{
 .blogs-news .news-infos-container .news-infos .news-past{
 	font-size: 16px;
 	margin: 0;
-	color: #000;
+	color: #ddd;
 }
 .blogs-news .news-infos-container .news-infos .news-content{
 	height: 64px;
@@ -1504,10 +1520,13 @@ button:focus, button:active{
 	}
 }
 
+.solution-section h3{
+	height: 60px;
+}
 .solution{
 	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: auto 200px;
+	background-position: center 30px;
+	background-size: 140px;
 	position: relative;
 	padding-top: 200px;
 	width: 220px;
@@ -1688,4 +1707,66 @@ button:focus, button:active{
 		left: calc(50% - 10px) !important;
 		top: -16px !important;
 	}
+}
+
+#biodialog_bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+	z-index: 1000;
+}
+#biodialog{
+	position: fixed;
+	width: 500px;
+	height: 600px;
+	top: -800px;
+	left: calc(50% - 250px);
+	z-index: 1001;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+}
+#biodialog .biodlg-close-btn{
+	position: absolute;
+	color: #000;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+#biodialog img{
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin: 20px auto;
+	border-radius: 50%;
+	border: 2px solid rgb(41, 43, 114);
+}
+#biodialog .name{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+#biodialog .role{
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Roboto-Regular';
+}
+#biodialog .detail{
+	text-align: justify;
+	max-height: 230px;
+	margin-bottom: 10px;
+	overflow-y: auto;
+	font-family: 'Roboto-Regular';
+	color: #000;
+	font-size: 12px;
+}
+#biodialog .socials{
+	text-align: center;
+	font-size: 30px;
 }
