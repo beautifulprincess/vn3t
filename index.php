@@ -40,11 +40,11 @@ $faqs = array(
 			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>")
 );
 $roadmaps = array(
-	array("date" => "2017 Q4", "content" => "Pre Sale launch"),
-	array("date" => "2018 Q1", "content" => "Public ICO launch"),
-	array("date" => "2018 Q2", "content" => "Development starts, Ethereum fork"),
-	array("date" => "2018 Q3", "content" => "New blockchain genesis block launch, all token are replaced using our public exchange token smart contracts"),
-	array("date" => "2018 Q4", "content" => "Mining application Beta for NVIDIA cards (3 types)"),
+	array("date" => "2017 Q4", "content" => "ICO Custodian Fund creation"),
+	array("date" => "2018 Q1", "content" => "ICO Private Investor Presale<br>ICO campaign<br>Crowdsale 1st round"),
+	array("date" => "2018 Q2", "content" => "VN3T operation starts"),
+	array("date" => "2018 Q3", "content" => "VN3T ethereum fork - Genesis Block -  Crypto exchange release"),
+	array("date" => "2018 Q4", "content" => "VN3T mining apps Beta"),
 	array("date" => "2019 Q1", "content" => "Beta release for data visualisation tool, sandbox and marketplace web (chrome, edge) and mobile clients (android, Ios)"),
 	array("date" => "2019 Q2", "content" => "Alpha release for data visualisation tool, sandbox and marketplace web (chrome, edge) and mobile clients (android, Ios)"),
 	array("date" => "2019 Q4", "content" => "1 Millions trade volume"),
