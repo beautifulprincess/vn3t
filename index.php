@@ -80,7 +80,7 @@ $newss = array(
 $socials = array(
 	array('class' => 'facebook', 'link' => 'https://www.facebook.com/Vn3t-186287608614206/'),
 	array('class' => 'twitter', 'link' => 'https://twitter.com/Vn3t1?lang=en'),
-	array('class' => 'btc', 'link' => '#'),
+	array('class' => 'btc', 'link' => 'https://bitcointalk.org/index.php?action=profile;u=1312644;sa=showPosts'),
 	array('class' => 'medium', 'link' => 'https://medium.com/@vn3ttech/decentralized-marketplace-for-global-data-network-e94e4fa1707b'),
 	array('class' => 'youtube-play', 'link' => 'https://www.youtube.com/channel/UCn0BOghrGyl61inu6XdFEpA'),
 	array('class' => 'google-plus', 'link' => 'https://plus.google.com/communities/114641882272567968874'),
