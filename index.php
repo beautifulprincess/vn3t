@@ -181,8 +181,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 		array('name' => 'Julia Fodor', 'title' => 'Senior trooper developer', 'photo' => '2.jpg', 'detail' => "I am a full stack web developer with over 10 years experience of working history.<br><br>Main Skills :<br>✓ Basic Web Skills : JavaScript / jQuery / PHP / HTML / CSS / SASS<br>✓ JavaScript Frameworks : Angular / Vue / Node / Express Framework<br>✓ PHP Frameworks : Laravel / CodeIgniter / Symfony / Yii / CakePHP<br>✓ WebGL Skills : ThreeJS / BabylonJS / Canvas<br>✓ Databases: MongoDB / MySQL / Sqlite / DB Schema<br>✓ Cloud Computing Technologies: Heroku / AWS / EC2 / Google Cloud / Digital Ocean<br><br>I am specialist for AngularJs and Vue.js in frontend development and PHP, nodeJS frameworks in backend development.<br><br>My goal is to provide 100% highest quality of work to my clients.<br><br>I like challenging hard and big projects.", 'socials' => array('linkedin' => 'http://beautifulprincess.000webhostapp.com/')),
 		array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 		array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'Eduard Dimitru', 'title' => 'Front-end artists', 'photo' => 'eduard.png', 'detail' => "Blockchain Advisor, Solidity Programmer and Whitepaper Author<br><br>
-Chris has been project managing engineering for over 10 years, and recently migrated into the blockchain space relying on his computer science degree and love for anything tech to advance himself quickly. Chris has been helping people in the blockchain space achieve their goals since 2016.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/eduard-dumitru-59112a146/')),
+		array('name' => 'Eduard Dimitru', 'title' => 'Front-end artists', 'photo' => 'eduard.png', 'detail' => "", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/eduard-dumitru-59112a146/')),
 		array('name' => 'In process', 'title' => 'API ninja', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 		array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 		array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
@@ -452,6 +451,7 @@ Chris has been project managing engineering for over 10 years, and recently migr
 <?php } ?>
 	</div>
 </section>
+<?php if (0) { ?>
 <section id="advisory">
 	<h1>ADVISORY TEAM</h1>
 	<div class="row">
@@ -472,6 +472,7 @@ Chris has been project managing engineering for over 10 years, and recently migr
 <?php } ?>
 	</div>
 </section>
+<?php } ?>
 <section id="partners">
 	<h1>PARTNERS</h1>
 	<div class="row">

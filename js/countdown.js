@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	var ico_date_y = 2017;
-	var ico_date_m = 11;
+	var ico_date_y = 2018;
+	var ico_date_m = 0;
 	var ico_date_d = 1;
 	var ico = Date.UTC(ico_date_y, ico_date_m, ico_date_d);
 
