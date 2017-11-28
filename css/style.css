@@ -1434,7 +1434,7 @@ section#problematic{
 }
 .carousel figure {
   margin: 0;
-  width: 70%;
+  width: 50%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
@@ -1468,19 +1468,19 @@ section#problematic{
 	cursor: pointer;
 }
 .carousel button.prev {
-	left: calc(15% - 50px);
+	left: calc(25% - 50px);
 }
 .carousel button.next {
-	left: calc(85% + 10px);
+	left: calc(75% + 10px);
 }
 button:focus, button:active{
 	outline: none;
 }
 .prob-slider-bg{
 	position: absolute;
-	left: 15%;
+	left: 25%;
 	top: 0px;
-	width: 70%;
+	width: 50%;
 	height: 100%;
 	background-image: url(../images/problematic/sb.png);
 	background-repeat: no-repeat;
@@ -1500,6 +1500,66 @@ button:focus, button:active{
 	color: #fff;
 	font-size: 34px;
 	height: 100%;
+}
+@media (max-width: 1400px)
+{
+	.carousel figure {
+		width: 60%;
+	}
+	.carousel button.prev {
+		left: calc(20% - 50px);
+	}
+	.carousel button.next {
+		left: calc(80% + 10px);
+	}
+	.prob-slider-bg{
+		left: 20%;
+		width: 60%;
+	}
+}
+@media (max-width: 1200px)
+{
+	.carousel figure {
+		width: 70%;
+	}
+	.carousel button.prev {
+		left: calc(15% - 50px);
+	}
+	.carousel button.next {
+		left: calc(85% + 10px);
+	}
+	.prob-slider-bg{
+		left: 15%;
+		width: 70%;
+	}
+	.prob-slider-bg p{
+		font-size: 32px;
+	}
+}
+@media (max-width: 1000px)
+{
+	.carousel figure {
+		width: 80%;
+	}
+	.carousel button.prev {
+		left: calc(10% - 50px);
+	}
+	.carousel button.next {
+		left: calc(90% + 10px);
+	}
+	.prob-slider-bg{
+		left: 10%;
+		width: 80%;
+	}
+	.prob-slider-bg p{
+		font-size: 30px;
+	}
+}
+@media (max-width: 800px)
+{
+	.prob-slider-bg p{
+		font-size: 24px;
+	}
 }
 @media (max-width: 680px)
 {
