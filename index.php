@@ -58,14 +58,14 @@ $administratives = array(
 	array('img' => '2.png', 'title' => 'Legal: Fasken Martineau Québec', 'link' => 'http://www.fasken.com')
 );
 $partners = array(
-	array('img' => '1.png'),
-	array('img' => '2.png'),
-	array('img' => '3.png'),
-	array('img' => '4.png'),
-	array('img' => '5.png'),
-	array('img' => '6.png'),
-	array('img' => '7.png'),
-	array('img' => '8.png')
+	array('img' => '1.png', "url" => "http://www.virtuba.com/"),
+	array('img' => '2.png', "url" => "http://www.fasken.com/en/offices/Office.aspx?office=384fbfab-c09e-4fe9-8dd8-09c94cfb012d"),
+	array('img' => '3.png', "url" => "https://www.itis.ulaval.ca/cms/site/itis/page75792.html"),
+	array('img' => '4.png', "url" => "https://www.bdo.ca/en-ca/home/"),
+	array('img' => '5.png', "url" => "http://www.gibraltarlawyers.com/"),
+	array('img' => '6.png', "url" => "http://www.montreal.ai/"),
+	array('img' => '7.png', "url" => "http://www.eruditescience.com/"),
+	array('img' => '8.png', "url" => "https://www.nrc-cnrc.gc.ca/index.html"),
 );
 $blogs = array(
 	array('img' => 'b1.png', 'title' => 'VN3T Solution for Global Data Network', 'content' => 'As data assets or algorithms become more valuable, many organizations develop strategies to extract greater value either directly or indirectly. With VN3t data stream services, it will become possible for AI decision making to develop in real-time using live data streams as well as complex services and create innovative solutions.', 'pasttime' => 'Nov 23, 2017', 'url' => 'https://medium.com/@vn3ttech/vn3t-solution-for-global-data-network-cefb29ae32d3'),
@@ -142,7 +142,7 @@ Media, where he was responsible for the digital strategy, including the diversif
 product offerings and the acceleration and growth of the New Media and Digital
 Solutions Group. During his mandate, the company won multiple awards including
 Marketing Magazine’s 2012 Media Player of the Year.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/dominiqueforest/')),
-		array('name' => 'In Process', 'title' => 'CAIO', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In Process', 'title' => 'CAIO', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 	),
 	"technical" => array(
 		array('name' => 'Dmytro Sytnik', 'title' => 'Technical ICO<br>manager', 'photo' => '1.jpg', 'detail' => "Human Resource Management: Research and define job descriptions to fill department resource needs. Screen and recommend interview candidates. Integrate new hires into teams and processes.<br>
@@ -179,24 +179,24 @@ Web Content development<br>
 Market Research<br>
 Development of Training Materials", 'socials' => array('linkedin' => '#')),
 		array('name' => 'Julia Fodor', 'title' => 'Senior trooper developer', 'photo' => '2.jpg', 'detail' => "I am a full stack web developer with over 10 years experience of working history.<br><br>Main Skills :<br>✓ Basic Web Skills : JavaScript / jQuery / PHP / HTML / CSS / SASS<br>✓ JavaScript Frameworks : Angular / Vue / Node / Express Framework<br>✓ PHP Frameworks : Laravel / CodeIgniter / Symfony / Yii / CakePHP<br>✓ WebGL Skills : ThreeJS / BabylonJS / Canvas<br>✓ Databases: MongoDB / MySQL / Sqlite / DB Schema<br>✓ Cloud Computing Technologies: Heroku / AWS / EC2 / Google Cloud / Digital Ocean<br><br>I am specialist for AngularJs and Vue.js in frontend development and PHP, nodeJS frameworks in backend development.<br><br>My goal is to provide 100% highest quality of work to my clients.<br><br>I like challenging hard and big projects.", 'socials' => array('linkedin' => 'http://beautifulprincess.000webhostapp.com/')),
-		array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 		array('name' => 'Eduard Dimitru', 'title' => 'Front-end artists', 'photo' => 'eduard.png', 'detail' => "", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/eduard-dumitru-59112a146/')),
-		array('name' => 'In process', 'title' => 'API ninja', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'Developer 2', 'title' => 'Senior trooper developer', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'Developer 3', 'title' => 'Senior trooper developer', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'API ninja', 'photo' => '6.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'Cloud<br>computing mad-genius network engineer', 'photo' => '7.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'Decentralized Storage Wizard', 'photo' => '8.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'Devops Buccaneer', 'photo' => '9.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'John Popescu', 'title' => 'Technical Writer', 'photo' => '11.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'AI guru’s', 'photo' => '12.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'Uncanny cryptographer', 'photo' => '13.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 	),
 	"advisory" => array(
-		array('name' => '', 'title' => '', 'photo' => '1.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => '', 'title' => '', 'photo' => '2.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => '', 'title' => '', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => '', 'title' => '', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
-		array('name' => '', 'title' => '', 'photo' => '5.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'University LAVAL', 'title' => 'University LAVAL', 'photo' => 'ITIS.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => '', 'title' => '', 'photo' => '2.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => '', 'title' => '', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => '', 'title' => '', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+//		array('name' => '', 'title' => '', 'photo' => '5.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 	),
 );
 ?>
@@ -205,6 +205,10 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Earn up 1,5% per day, Hottest-ICO/X50, BGG for a worldwide scale ICO Reliable investment,  Lending and exchange trading" /> 
+	<meta id="project_name" name="project_name" content="">
+	<meta name="keywords" content="ICO, ico website, ico team, ico work, bitcoin, ethereum">
+	<meta name="msvalidate.01" content="0279349BB9CF7ACA882F86F29C50D3EA" />
 
 	<title>VN3T</title>
 
@@ -404,7 +408,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>EXECUTIVE MEMBERS</h1>
 	<div class="row exe-members">
 <?php foreach ($bios['executive'] as $i => $em) { ?>
-		<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3<?php echo $i == 4 ? ' offset-lg-3' : ''; ?>">
+		<div class="col col-xs-12 col-sm-6 col-md-4<?php echo $i == 3 ? ' offset-lg-0 offset-md-2' : ''; ?><?php echo $i == 4 ? ' col-lg-4 offset-lg-4 offset-md-0 offset-sm-3' : ' col-lg-3'; ?>">
 			<div class="circle-dashed exe-member" style="background-image: url(images/member/executive/<?php echo $em['photo']; ?>);" onclick="show_bio('executive', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
@@ -422,7 +426,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>TECHNICAL TEAM</h1>
 	<div class="row tech-members">
 <?php foreach ($bios['technical'] as $i => $tm) { ?>
-		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-2<?php echo $i == 12 ? " offset-lg-4 offset-md-3 offset-sm-2" : ''; ?>">
+		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-3<?php echo $i == 3 ? " offset-lg-0 offset-md-0 offset-sm-4" : ''; ?><?php echo $i == 12 ? " offset-lg-4 offset-md-3 offset-sm-2" : ''; ?>">
 			<div class="circle-dashed tech-member" style="background-image: url(images/member/technical/<?php echo $tm['photo']; ?>);" onclick="show_bio('technical', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
@@ -451,7 +455,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 <?php } ?>
 	</div>
 </section>
-<?php if (0) { ?>
+<?php if (1) { ?>
 <section id="advisory">
 	<h1>ADVISORY TEAM</h1>
 	<div class="row">
@@ -478,7 +482,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<div class="row">
 <?php foreach ($partners as $p) { ?>
 		<div class="col col-xs-12 col-sm-6 col-md-3">
-			<div class="partner-bg" style="background-image: url(images/partners/<?php echo $p['img']; ?>);"></div>
+			<div class="partner-bg" style="background-image: url(images/partners/<?php echo $p['img']; ?>);" onclick="window.open('<?php echo $p['url']; ?>')"></div>
 		</div>
 <?php } ?>
 	</div>

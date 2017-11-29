@@ -744,9 +744,22 @@ header.onTop .navbar-toggler-right{
 	width: 200px;
 	height: 200px;
 }
+.circle-dashed.exe-member:hover{
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 .circle-dashed.tech-member{
 	width: 120px;
 	height: 120px;
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.circle-dashed.tech-member:hover{
+	-webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .circle-dashed.adv-member{
 	width: 120px;
@@ -1069,9 +1082,6 @@ header.onTop .navbar-toggler-right{
 .blogs-news .news-col .row .col-lg-12{
 	padding: 0;
 }*/
-.col-xs-12{
-	width: 100%;
-}
 
 footer{
 	position: relative;
@@ -1829,4 +1839,9 @@ button:focus, button:active{
 #biodialog .socials{
 	text-align: center;
 	font-size: 30px;
+}
+@media (max-width: 576px){
+	.col-xs-12{
+		width: 100%;
+	}
 }
