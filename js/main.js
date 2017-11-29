@@ -77,6 +77,17 @@ $(document).ready(function(){
 		});
 	};
 	$("#biodialog_bg, .biodlg-close-btn").click(closg_bio_dlg);
+
+	$(".cp_signature").click(function(){
+		var copyText = document.getElementById("signature");
+		copyText.select();
+		document.execCommand("Copy");
+	});
+	$(".cp_contract").click(function(){
+		var copyText = document.getElementById("contract");
+		copyText.select();
+		document.execCommand("Copy");
+	});
 });
 $(window).bind("load", function () {
 	$('#work-in-progress').fadeOut(100);

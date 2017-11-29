@@ -547,6 +547,19 @@ header.onTop .navbar-toggler-right{
 	padding-bottom: 20px;
 	height: auto;
 }
+#faq .faq-h1{
+	font-size: 24px;
+}
+#faq em{
+	cursor: pointer;
+	color: #000;
+	font-style: normal;
+}
+.for-clipboard{
+	position: fixed;
+	top: -50px;
+	left: -500px;
+}
 #roadmap{
 	background: rgba(52, 58, 151, 0.5);
 	min-height: 1164px;
@@ -743,6 +756,7 @@ header.onTop .navbar-toggler-right{
 .circle-dashed.exe-member{
 	width: 200px;
 	height: 200px;
+    cursor: pointer;
 }
 .circle-dashed.exe-member:hover{
 	-webkit-filter: grayscale(100%);
@@ -755,6 +769,7 @@ header.onTop .navbar-toggler-right{
 	-webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
+    cursor: pointer;
 }
 .circle-dashed.tech-member:hover{
 	-webkit-filter: grayscale(0%);
@@ -952,6 +967,7 @@ header.onTop .navbar-toggler-right{
 	top: 0;
 	left: calc(50% - 150px);
 	transition-duration: 0.3s;
+	background: #7599E77f;
 }
 .blogs-news .blog-infos-container:hover{
 	background-color: rgba(0, 0, 0, .3);
@@ -1012,6 +1028,7 @@ header.onTop .navbar-toggler-right{
 	top: 0;
 /*	left: calc(50% - 110px);*/
 	transition-duration: 0.3s;
+	background: #7599E77f;
 }
 .blogs-news .news-infos-container:hover{
 	background-color: rgba(0, 0, 0, .3);

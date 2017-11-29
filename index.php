@@ -29,15 +29,22 @@ $ecosystems = array(
 	array("td1" => "Provider 3", "td2" => "Channel 3", "p" => "Standard virtual<br>machine"),
 	array("td1" => "Provider 4", "td2" => "Channel 4", "p" => "Standard virtual<br>machine")
 );
+$signature = "H8A6R3D38QI6JZ9Y";
+$contract = "98013274197";
+$funcname = "getMyBalance";
 $faqs = array(
-	array("q" => "ICO Instruction", "a" => "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>"),
-	array("q" => "Question number one", "a" => "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>"),
-	array("q" => "Question number two", "a" => "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>"),
-	array("q" => "Question number three", "a" => "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>")
+	array("q" => "ICO Instructions", "a" => "<p class='faq-h1'>Invest in VN3T ICO</p>
+		<p>IMPORTANT : Before investing, verify that the address of the website contain the green lock and the signature $signature.</p>
+		<p>To invest in VN3T ICO, click “Participate”,  enter your address in the corresponding form field, the amount of token you wish to buy and the maximum gas you wish to put in transaction (more gas mean quicker transactions).</p>
+		<p>You can also interact directly with our smart contract at : $contract</p>
+		<p>You can send Ether directly to our smart contract or use the buyToken function.</p>
+		<p>Note that the minimum buy start at 1 Ether.</p>
+		<p class='faq-h1'>Setup my wallet</p>
+		<p>Compatible wallet such as Jaxx.io, Mist and parity can all watch a smart contract and retrieve token balance for a user. You need an ether address from one of theses wallets, to receive your vc01ns.</p>"),
+	array("q" => "How to see my token balance from the website ?", "a" => "<p>You can use our token form to retrieve current token balance directly from our website. We are using web3 library to interact directly from your browser to the smart contract.</p>
+		<p>Please make sure you see the green lock and our signature <em title='Copy to clipboard' class='cp_signature'>$signature</em> in the url bar to avoid fishing. Typing ctrl-F and copy pasting the signature is a good way to avoid resembling names and such phishing attempt.</p>"),
+	array("q" => "How do I see my token balance from my wallet?", "a" => "<p>With compatible wallets, you can select custom token or watch contract, enter the contract address <em title='Copy to clipboard' class='cp_contract'>$contract</em>. This will enable you to interact with the contract. On the list of buttons that appear, select $funcname . This will return you your exact balance in vc01ns.</p>"),
+	array("q" => "How does the price is calculated ?", "a" => "<p>The price of the vc01n is calculated, during the ICO only this way. We start our crowdsale at: \$0.02 Each new backer will add a fraction very small fraction to the price. If we get to ten thousands (10 000) backers, the price will cap at a maximum of \$20 . We will stop selling coin at a hard cap of fifty-five thousands (55 000) Ethers.</p>")
 );
 $roadmaps = array(
 	array("date" => "2017 Q4", "content" => "ICO Custodian Fund creation"),
@@ -71,7 +78,7 @@ $blogs = array(
 	array('img' => 'b1.png', 'title' => 'VN3T Solution for Global Data Network', 'content' => 'As data assets or algorithms become more valuable, many organizations develop strategies to extract greater value either directly or indirectly. With VN3t data stream services, it will become possible for AI decision making to develop in real-time using live data streams as well as complex services and create innovative solutions.', 'pasttime' => 'Nov 23, 2017', 'url' => 'https://medium.com/@vn3ttech/vn3t-solution-for-global-data-network-cefb29ae32d3'),
 	array('img' => 'b2.jpeg', 'title' => 'Challenge and Solution of Vn3t', 'content' => 'The world is changing and physical assets are becoming less and less essential in business. In contrast, data has become main part of company assets and IT world.', 'pasttime' => 'Nov 22, 2017', 'url' => 'https://medium.com/@vn3ttech/challenge-and-solution-of-vn3t-b119faf193e0'),
 	array('img' => '3.jpg', 'title' => 'Decentralized Marketplace For Global Data Network', 'content' => 'VN3T is a two-way marketplace designed for an ecosystem of data and algorithm stakeholders. The infrastructure is built using blockchain distributed ledger and self executing code technology which handles multi-layered transactional environment supporting a real-time service creation scaling market in the form of software as a service (SaaS) or “building block” strategy.', 'pasttime' => 'Nov 15, 2017', 'url' => 'https://medium.com/@vn3ttech/decentralized-marketplace-for-global-data-network-e94e4fa1707b'),
-	array('img' => '4.jpg', 'title' => 'VN3T Architecture', 'content' => 'Most machine learning algorithms currently available are commonly known as “narrow artificial intelligence (AI)”. With the breakthrough of deep learning, the advent of reinforced learning, and “policy based” decision making AI, in the next ten (10) years more decision making AIs will be commonly found. Starting with self-driving cars which make ethical choices based on a regulations framework, complex chatbots and smart trading bots AI will occupy an important, vital position in many aspects of society. With VN3t data stream services, it will become possible for AI decision making to develop in real-time using live data streams as well as complex services and create innovative solutions.', 'pasttime' => 'Nov 29, 2017', 'url' => 'https://medium.com/@vn3ttech/vn3t-architecture-a4ae5bb237d2')
+	array('img' => 'provider.png', 'title' => 'VN3T Architecture', 'content' => 'Most machine learning algorithms currently available are commonly known as “narrow artificial intelligence (AI)”. With the breakthrough of deep learning, the advent of reinforced learning, and “policy based” decision making AI, in the next ten (10) years more decision making AIs will be commonly found. Starting with self-driving cars which make ethical choices based on a regulations framework, complex chatbots and smart trading bots AI will occupy an important, vital position in many aspects of society. With VN3t data stream services, it will become possible for AI decision making to develop in real-time using live data streams as well as complex services and create innovative solutions.', 'pasttime' => 'Nov 29, 2017', 'url' => 'https://medium.com/@vn3ttech/vn3t-architecture-a4ae5bb237d2')
 );
 $newss = array(
 	array('img' => 'https://i.imgur.com/bfdF6aS.jpg', 'title' => 'Distributed Marketplace', 'content' => 'VN3T provides a marketplace infrastructure and interface, distributed within the data community, which enables multiple organizations to easily and safely monetize their data, algorithm models and train new algorithms.', 'pasttime' => '2 days ago'),
@@ -94,18 +101,7 @@ $solutions = array(
 $bios = array(
 	"executive" => array(
 		array('name' => 'Jean-Philippe Beaudet', 'title' => 'President<br>Co-Founder &amp; CTO', 'photo' => '1.jpg', 'detail' => "Becoming an entrepreneur was the next logical step for Jean-Philippe Beaudet and even more so as the CTO and co-founder of S3R3NITY Technologies. The firm is specialized in software development services which are directly aligned with the young man’s passions, experiences and ambitions. Mr. Beaudet is a highly skilled professional with extensive experience in software management, operations development, human resources management as well as design and implementation of technological pipelines. As a result of his previous work and studies, Mr. Beaudet became proficient in multiple programming languages, platforms and software such as: Javascript web development software, Node.js, HTML5, CSS3, jQuery, Python and Java. This specific level of knowledge has allowed him to further develop his capacities in software architecture and game development. Mr. Beaudet’s ability to effectively communicate otherwise intricate concepts and ideas truly makes him an asset for transmitting intelligible data and information to his team and customers.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/jean-philippe-beaudet-12472884/')),
-		array('name' => 'Yves Lamarre', 'title' => 'Vice President/CBDO<br>Co-Founder', 'photo' => '2.jpg', 'detail' => "Former member of the Canadian Armed Forces. Yves Lamarre spent the last 12 years
-doing business development for physical and online retailers, mainly in Nicaragua and
-Spain. He was involved in real estate development in Nicaragua. He developed and built
-“International Call Center” and online based projects. When he came back to Canada, he
-decided to work on his project; Virtuba; which is a digital safety-box for individuals and
-14
-corporations. From the need to ensure proper security of this digital safety-box, Vn3t
-Technologies was born. With this blockchain technology, Vn3t Technologies is able to
-provide stronger level of security of data than the cloud and servers can do. As well, it
-respects the core element of this unique ecosystem; PRIVACY. As a strong advocate for
-privacy Yves Lamarre believe that every business should provide security and privacy to
-its customers. That is exactly what Vn3t Technologies et Virtuba are all about.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/ylvirtuba#')),
+//		array('name' => 'Yves Lamarre', 'title' => 'Vice President/CBDO<br>Co-Founder', 'photo' => '2.jpg', 'detail' => "Former member of the Canadian Armed Forces. Yves Lamarre spent the last 12 years doing business development for physical and online retailers, mainly in Nicaragua and Spain. He was involved in real estate development in Nicaragua. He developed and built “International Call Center” and online based projects. When he came back to Canada, he decided to work on his project; Virtuba; which is a digital safety-box for individuals and 14 corporations. From the need to ensure proper security of this digital safety-box, Vn3t Technologies was born. With this blockchain technology, Vn3t Technologies is able to provide stronger level of security of data than the cloud and servers can do. As well, it respects the core element of this unique ecosystem; PRIVACY. As a strong advocate for privacy Yves Lamarre believe that every business should provide security and privacy to its customers. That is exactly what Vn3t Technologies et Virtuba are all about.", 'socials' => array('linkedin' => 'https://www.linkedin.com/in/ylvirtuba#')),
 		array('name' => 'Mathieu Fanoni', 'title' => 'COO / Co-Founder', 'photo' => '3.jpg', 'detail' => "Mathieu Fanoni has an acute passion for new technologies and new ways of
 implementing them; he excels in providing strategic support and defines himself as an
 \"evangelist for AI and blockchain technologies\". As a fierce believer in new digital
@@ -268,7 +264,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>Decentralized Marketplace For Global Data Network</h1>
 	<p>VN3T is a two-way marketplace designed for an ecosystem of data and algorithm stakeholders.</p>
 	<div class="home-icon"></div>
-	<div class="home-btn-div">PARTICIPATE NOW!</div>
+	<!--<div class="home-btn-div">PARTICIPATE NOW!</div>-->
 </div>
 </section>
 <section id="problematic">
@@ -386,6 +382,8 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 		<p><span class="white">Purchase method:</span> <span class="black">USD, ETH, BTC, ZCash, DashCoin</span></p>
 	</div>
 </section>
+	<input class="for-clipboard" type="text" value="<?php echo $signature; ?>" id="signature">
+	<input class="for-clipboard" type="text" value="<?php echo $contract; ?>" id="contract">
 <section id="faq">
 	<h1>VN3T - FAQ</h1>
 	<div class="faq-div">
@@ -408,7 +406,8 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>EXECUTIVE MEMBERS</h1>
 	<div class="row exe-members">
 <?php foreach ($bios['executive'] as $i => $em) { ?>
-		<div class="col col-xs-12 col-sm-6 col-md-4<?php echo $i == 3 ? ' offset-lg-0 offset-md-2' : ''; ?><?php echo $i == 4 ? ' col-lg-4 offset-lg-4 offset-md-0 offset-sm-3' : ' col-lg-3'; ?>">
+		<?php /* ?><div class="col col-xs-12 col-sm-6 col-md-4<?php echo $i == 3 ? ' offset-lg-0 offset-md-2' : ''; ?><?php echo $i == 4 ? ' col-lg-4 offset-lg-4 offset-md-0 offset-sm-3' : ' col-lg-3'; ?>"><?php //*/ ?>
+		<?php //* ?><div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3"><?php //*/ ?>
 			<div class="circle-dashed exe-member" style="background-image: url(images/member/executive/<?php echo $em['photo']; ?>);" onclick="show_bio('executive', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">
@@ -455,28 +454,16 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 <?php } ?>
 	</div>
 </section>
-<?php if (1) { ?>
 <section id="advisory">
 	<h1>ADVISORY TEAM</h1>
 	<div class="row">
 <?php foreach ($bios['advisory'] as $i => $am) { ?>
-		<div class="col col-xs-12 col-sm-4 col-lg-2<?php echo $i == 0 ? " offset-lg-1" : ""; echo $i == 3 ? " offset-sm-2 offset-lg-0" : ""; ?>">
-			<div class="circle-dashed adv-member" style="background-image: url(images/member/advisory/<?php echo $am['photo']; ?>);" onclick="show_bio('advisory', <?php echo $i; ?>)">
-				<div class="member-detail">
-					<div class="member-info">
-						<p><?php echo $am['title']; ?></p>
-						<div class="member-soicals">
-							<a href="<?php echo $am['socials']['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p><?php echo $am['name']; ?></p>
+		<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-md-3 offset-lg-3">
+			<img src="images/member/advisory/<?php echo $am['photo']; ?>" width="90%">
 		</div>
 <?php } ?>
 	</div>
 </section>
-<?php } ?>
 <section id="partners">
 	<h1>PARTNERS</h1>
 	<div class="row">
