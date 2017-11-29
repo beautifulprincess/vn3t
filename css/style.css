@@ -683,7 +683,7 @@ header.onTop .navbar-toggler-right{
 	width: 25%;
 }
 #roadmap_graph .width-33{
-	width: 33%;
+	width: 33.3%;
 }
 #roadmap_graph .width-50{
 	width: 50%;
@@ -1590,8 +1590,14 @@ button:focus, button:active{
 	}
 }
 
-.solution-section h3{
+.solution-section .solution-title{
+	display: table;
+	width: 100%;
+}
+.solution-title h3{
 	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
 }
 .solution{
 	background-repeat: no-repeat;
