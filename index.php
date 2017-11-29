@@ -264,7 +264,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>Decentralized Marketplace For Global Data Network</h1>
 	<p>VN3T is a two-way marketplace designed for an ecosystem of data and algorithm stakeholders.</p>
 	<div class="home-icon"></div>
-	<!--<div class="home-btn-div">PARTICIPATE NOW!</div>-->
+	<div class="home-btn-div">PARTICIPATE NOW!</div>
 </div>
 </section>
 <section id="problematic">
