@@ -70,8 +70,8 @@ $partners = array(
 	array('img' => '3.png', "url" => "https://www.itis.ulaval.ca/cms/site/itis/page75792.html"),
 	array('img' => '4.png', "url" => "https://www.bdo.ca/en-ca/home/"),
 	array('img' => '5.png', "url" => "http://www.gibraltarlawyers.com/"),
-	array('img' => '6.png', "url" => "http://www.montreal.ai/"),
-	array('img' => '7.png', "url" => "http://www.eruditescience.com/"),
+	array('img' => '6.png', "url" => "http://www.eruditescience.com/"),
+	array('img' => '7.png', "url" => "http://www.montreal.ai/"),
 	array('img' => '8.png', "url" => "https://www.nrc-cnrc.gc.ca/index.html"),
 );
 $blogs = array(
@@ -300,7 +300,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<!--<img class="ecosystem-image" src="images/ecosystem.png">-->
 	<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>-->
 <!--	<div class="row ecosystem-wireframe-div">
-<?php foreach ($ecosystems as $eco) { ?>
+<?php /*foreach ($ecosystems as $eco) { ?>
 		<div class="col-sm-3">
 			<table class="ecosystem-table">
 				<tr><td><?php echo $eco['td1']; ?></td></tr>
@@ -308,7 +308,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 			</table>
 			<p><?php echo $eco['p']; ?></p>
 		</div>
-<?php } ?>
+<?php }//*/ ?>
 	</div>-->
 </section>
 <section class="icodetails">
@@ -392,7 +392,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<h1>TECHNICAL TEAM</h1>
 	<div class="row tech-members">
 <?php foreach ($bios['technical'] as $i => $tm) { ?>
-		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-3<?php echo $i == 3 ? " offset-lg-0 offset-md-0 offset-sm-4" : ''; ?><?php echo $i == 12 ? " offset-lg-4 offset-md-3 offset-sm-2" : ''; ?>">
+		<div class="col col-xs-12 col-sm-4 col-md-3 col-lg-3<?php echo $i == 6 ? " offset-lg-0 offset-md-0 offset-sm-2" : ''; ?>">
 			<div class="circle-dashed tech-member" style="background-image: url(images/member/technical/<?php echo $tm['photo']; ?>);" onclick="show_bio('technical', <?php echo $i; ?>)">
 				<div class="member-detail">
 					<div class="member-info">

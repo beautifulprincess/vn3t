@@ -818,12 +818,12 @@ header.onTop .navbar-toggler-right{
   /*animation-direction: alternate;*/
 }
 .exe-members p{
-	font-size: 25px;
+	font-size: 22px;
 	padding: 10px;
-	letter-spacing: 6px;
+	letter-spacing: 2px;
 }
 .tech-members p{
-	font-size: 23px;
+	font-size: 20px;
 	padding: 10px 0px;
 	letter-spacing: 2px;
 }
