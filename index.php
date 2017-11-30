@@ -156,7 +156,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 //		array('name' => 'In process', 'title' => 'Obsessive Data scientist', 'photo' => '14.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 	),
 	"advisory" => array(
-		array('name' => 'University LAVAL', 'title' => 'University LAVAL', 'photo' => 'ITIS.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
+		array('name' => 'University LAVAL', 'title' => 'University LAVAL', 'photo' => 'ITIS.jpg', 'detail' => "", 'socials' => array('linkedin' => '#'), "link" => "https://www.itis.ulaval.ca/cms/site/itis/page75792.html"),
 //		array('name' => '', 'title' => '', 'photo' => '2.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 //		array('name' => '', 'title' => '', 'photo' => '3.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
 //		array('name' => '', 'title' => '', 'photo' => '4.jpg', 'detail' => "", 'socials' => array('linkedin' => '#')),
@@ -427,7 +427,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<div class="row">
 <?php foreach ($bios['advisory'] as $i => $am) { ?>
 		<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-md-3 offset-lg-3">
-			<img src="images/member/advisory/<?php echo $am['photo']; ?>" width="90%">
+			<a href="<?php echo $am['link']; ?>" target="_blank"><img src="images/member/advisory/<?php echo $am['photo']; ?>" width="90%"></a>
 		</div>
 <?php } ?>
 	</div>

@@ -1168,6 +1168,7 @@ footer .follow-us p{
 }
 footer .contact-us{
 	margin-top: 50px;
+	position: relative;
 }
 footer .contact-us input, footer .contact-us textarea {
 	display: block;
@@ -1872,4 +1873,26 @@ button:focus, button:active{
 	.col-xs-12{
 		width: 100%;
 	}
+}
+#contact_frm{
+	transition-duration: 0.3s;
+}
+.contact-us:after{
+	content: 'Sent!';
+	position: absolute;
+	font-size: 32px;
+	color: #fff;
+	width: 100px;
+	height: 40px;
+	top: 180px;
+	left: calc(50% - 50px);
+	text-align: center;
+	transform: scale(0, 0);
+	transition-duration: 0.3s;
+}
+.sent #contact_frm{
+	transform: scale(0, 0);
+}
+.contact-us.sent:after{
+	transform: scale(1, 1);
 }

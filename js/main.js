@@ -107,11 +107,13 @@ function submit_contact_frm(){
 			$("#username").val('');
 			$("#useremail").val('');
 			$("#message").val('');
+			$(".contact-us").removeClass("sent");
 		},
 		error: function(err) {
 			console.log(err);
 		}
 	});
+	$(".contact-us").addClass("sent");
 
 	return false;
 }
