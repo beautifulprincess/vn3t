@@ -342,10 +342,10 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 	<div>
 		<p><span class="white">Target:</span> <span class="black">$25 million</span> <span class="white">Supply:</span> <span class="black">3.5 billion tokens</span></p>
 		<table align=center>
-			<tr><td><span class="ico-percent-color color1"></span></td><td><span class="white">72% Crowd Sale:</span> <span class="black">2 500 000 000</span></td></tr>
-			<tr><td><span class="ico-percent-color color2"></span></td><td><span class="white">7% Affliated:</span> <span class="black">250 000 000</span></td></tr>
-			<tr><td><span class="ico-percent-color color3"></span></td><td><span class="white">14% Retained by VN3T:</span> <span class="black">500 000 000</span></td></tr>
-			<tr><td><span class="ico-percent-color color4"></span></td><td><span class="white">7% Reward Bounties:</span> <span class="black">250 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color1"></span></td><td><span class="white">76.8% Community:</span> <span class="black">2 500 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color2"></span></td><td><span class="white">5.8 % Affiliate program:</span> <span class="black">250 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color3"></span></td><td><span class="white">11.6 % Founders:</span> <span class="black">500 000 000</span></td></tr>
+			<tr><td><span class="ico-percent-color color4"></span></td><td><span class="white">5.8 % Bounties, Rewards:</span> <span class="black">250 000 000</span></td></tr>
 		</table>
 		<p><span class="white">Purchase method:</span> <span class="black">USD, ETH, BTC, ZCash, DashCoin</span></p>
 	</div>
