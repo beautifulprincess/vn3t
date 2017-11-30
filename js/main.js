@@ -120,7 +120,7 @@ function show_bio(mType, mNo)
 	if (event.target.tagName == "A" || event.target.tagName == "I")
 		return;
 	var wh = $(window).innerHeight();
-	$("#biodialog img").attr("src", "/images/member/" + mType + "/" + bios[mType][mNo].photo);
+	$("#biodialog .photo").css("background-image", "url(/images/member/" + mType + "/" + bios[mType][mNo].photo + ")");
 	$("#biodialog .name").html(bios[mType][mNo].name);
 	$("#biodialog .role").html(bios[mType][mNo].title.replace(/<br>/, ' '));
 	$("#biodialog .detail").html(bios[mType][mNo].detail);
