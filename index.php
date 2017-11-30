@@ -336,7 +336,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 			<p>SECONDS</p>
 		</div>
 	</div>
-	<p class="ico-detail-txt">The VC01n runs from December 1st until December 22nd 2017.<br>The Public Sale will begin February 1st 2018. </p>
+	<p class="ico-detail-txt">The VC01n runs from December 1st until December 22nd 2017.<br>The Public Sale will begin March 1st 2018. </p>
 
 	<div id="pie-container"></div>
 	<div>
