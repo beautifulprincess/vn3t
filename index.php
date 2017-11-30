@@ -65,7 +65,7 @@ $administratives = array(
 	array('img' => '2.png', 'title' => 'Legal: Fasken Martineau Québec', 'link' => 'http://www.fasken.com')
 );
 $partners = array(
-	array('img' => '1.png', "url" => "http://www.virtuba.com/"),
+	array('img' => 'virtuba.png', "url" => "http://www.virtuba.com/"),
 	array('img' => '2.png', "url" => "http://www.fasken.com/en/offices/Office.aspx?office=384fbfab-c09e-4fe9-8dd8-09c94cfb012d"),
 	array('img' => '3.png', "url" => "https://www.itis.ulaval.ca/cms/site/itis/page75792.html"),
 	array('img' => '4.png', "url" => "https://www.bdo.ca/en-ca/home/"),
@@ -222,11 +222,17 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 </header>
 
 <section id="home">
-<div class="video-background">
+<!-- Video BG Init -->
+<!-- Please, replace three video files in folder "video" with your own ones -->
+<div class="bg-video-wrapper" id="video-background-1">
+	<div class="bg-video-overlay bg-dark-alfa-50"></div>
+</div>
+<!-- End Video BG Init -->
+<!--<div class="video-background">
     <div class="video-foreground">
       <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
     </div>
-</div>
+</div>-->
 <div class="color-background"></div>
 <div class="home-content">
 	<h1>Decentralized Marketplace For Global Data Network</h1>
@@ -563,6 +569,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 
 	<script src="particles/particles.min.js"></script>
 	<script src="js/slider.js"></script>
+	<script src="js/jquery.videobackground.min.js"></script>
 	<script src="particles/app.js"></script>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f504cac8-32a2-4341-9e49-a69d3a0e8452";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>

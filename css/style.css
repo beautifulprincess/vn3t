@@ -1896,3 +1896,11 @@ button:focus, button:active{
 .contact-us.sent:after{
 	transform: scale(1, 1);
 }
+.bg-video-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
