@@ -91,6 +91,7 @@ $socials = array(
 	array('class' => 'medium', 'link' => 'https://medium.com/@vn3ttech/decentralized-marketplace-for-global-data-network-e94e4fa1707b'),
 	array('class' => 'youtube-play', 'link' => 'https://www.youtube.com/channel/UCn0BOghrGyl61inu6XdFEpA'),
 	array('class' => 'google-plus', 'link' => 'https://plus.google.com/communities/114641882272567968874'),
+	array('class' => 'telegram', 'link' => 'https://t.me/vn3tTech'),
 );
 $solutions = array(
 	array("icon" => "s1.png", "title" => "Distributed Marketplace", "content" => "VN3T provides a free market approach which will allow users and providers to simultaneously sell and buy data and algorithm services in the form of multi-layered transactions to build a more complex service, or to extract more valuable data. These operations are all handled in a powerful distributed ledger - a virtual environment of GPU power - that will permit peer-2-peer transactions."),
@@ -528,7 +529,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 			</div>
 			<div class="row">
 <?php foreach ($socials as $s) { ?>
-				<div class="social-link col col-sm-2"><a href="<?php echo $s['link']; ?>" target="_blank"><i class="fa fa-<?php echo $s['class']; ?>"></i></a></div>
+				<div class="social-link"><a href="<?php echo $s['link']; ?>" target="_blank"><i class="fa fa-<?php echo $s['class']; ?>"></i></a></div>
 <?php } ?>
 			</div>
 			<img src="images/logo-footer.png">

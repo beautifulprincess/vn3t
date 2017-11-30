@@ -1117,12 +1117,14 @@ footer h1{
 footer .follow-us{
 	text-align: left;
 	margin-top: 50px;
+	padding: 0;
 }
 footer .follow-us h1{
 	text-align: center;
 }
 footer .follow-us .social-link{
 	text-align: center;
+	margin-right: 10px;
 }
 footer .follow-us a{
 	display: inline-block;
