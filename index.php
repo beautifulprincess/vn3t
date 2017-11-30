@@ -340,7 +340,7 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 
 	<div id="pie-container"></div>
 	<div>
-		<p><span class="white">Target:</span> <span class="black">$25 million</span> <span class="white">Supply:</span> <span class="black">4.25  billion tokens</span></p>
+		<p><span class="white">Hard Cap for Crowdsale:</span> <span class="black">55000 Ether</span> <span class="white">Supply:</span> <span class="black">4.25  billion tokens</span></p>
 		<table align=center>
 			<tr><td><span class="ico-percent-color color1"></span></td><td><span class="white">76.8% Community:</span> <span class="black">3 250 000 000</span></td></tr>
 			<tr><td><span class="ico-percent-color color2"></span></td><td><span class="white">5.8 % Affiliate program:</span> <span class="black">250 000 000</span></td></tr>
