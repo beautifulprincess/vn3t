@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var org_cols = 0;
 	var initial_home = function(){
 		var hh = $(".home-content").innerHeight();
 		var wh = $(window).innerHeight();
@@ -12,6 +13,15 @@ $(document).ready(function(){
 		}
 
 		var wc = $("#roadmap_graph").innerWidth();
+		var cols = 0;
+		if (wc < 600)
+			cols = 1;
+		else if (wc < 900)
+			cols = 2;
+		else
+			cols = 3;
+		if (org_cols != 0 && cols == org_cols)
+			return;
 		var rc = "";
 		if (wc > 600)
 		{
@@ -19,17 +29,18 @@ $(document).ready(function(){
 			$("#roadmap_graph").removeClass("mobile-roadmap");
 			var ew = wc - 150;
 			var fl = false;
-			var cols = 3;
-			if (wc < 900) cols = 2;
 			var opened_row = false;
+			var j = 0;
 			for (var i = 0; i < roadmap_datas.length; i++){
 				if (i % cols === 0)
 				{
 					fl = !fl;
-					rc += "<div class='roadmap-row row-float-" + (fl ? "left" : "right") + "'>";
+					rc += "<div class='roadmap-row row-float-" + (fl ? "left" : "right") + "'><div class='roadmap-row-before roadmap-row-before-" + j + "'></div><div class='roadmap-row-after roadmap-row-after-" + j + "'><div class='roadmap-row-after-circle'></div></div>";
 					opened_row = true;
+					j++;
 				}
 				rc += "<div class='roadmap-col roadmap-col-" + i.toString() + " float-" + (fl ? "left" : "right") + " width-" + (Math.floor(100 / cols)) + "'>";
+				rc += "<div class='roadmap-col-before'></div>";
 				rc += "<div class='roadmap-date'" + (showed_roadmap ? " style='opacity: 1;'" : '') + ">" + roadmap_datas[i].date + "</div>";
 				rc += "<div class='roadmap-content'" + (showed_roadmap ? " style='opacity: 1; left: 0;'" : '') + ">" + roadmap_datas[i].content + "</div>";
 				rc += "</div>";
@@ -51,6 +62,7 @@ $(document).ready(function(){
 				rc += "</div>";
 			}
 		}
+		org_cols = cols;
 		$("#roadmap_graph").html(rc);
 	};
 	initial_home();

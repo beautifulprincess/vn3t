@@ -4,12 +4,41 @@ $(document).ready(function(){
 
 	var show_roadmap = function(){
 		showed_roadmap = true;
+ 		var wc = $("#roadmap_graph").innerWidth();
+ 		var cols = 3;
+		if (wc < 900) cols = 2;
+		if (wc < 600) cols = 1;
 
 		for(var i = 0; i < roadmap_datas.length; i++)
-			setTimeout(function(i){
-				$("#roadmap_graph .roadmap-col-" + i + " .roadmap-date").css({opacity: 1});
-				$("#roadmap_graph .roadmap-col-" + i + " .roadmap-content").css({left: 0, opacity: 1});
-			}, 200 * i, i);
+		 	setTimeout(function(i){
+				if (i == 0)
+		 			$("#roadmap_graph .roadmap-col-" + i + " .roadmap-col-before").css("width", "calc(100% - 10px)");
+		 		else if (i % cols == 0)
+		 			$("#roadmap_graph .roadmap-col-" + i + " .roadmap-col-before").css("width", "calc(100% - 125px)");
+		 		else
+		 			$("#roadmap_graph .roadmap-col-" + i + " .roadmap-col-before").css("width", "calc(100% - 10px)");
+		 		setTimeout(function(i){
+			 		$("#roadmap_graph .roadmap-col-" + i + " .roadmap-date").css({opacity: 1});
+			 		$("#roadmap_graph .roadmap-col-" + i + " .roadmap-content").css({left: 0, opacity: 1});
+			 		if (i == roadmap_datas.length - 1)
+						$("#roadmap_graph").addClass("rendered");
+			 	}, 1000, i);
+		 	}, 500 + (cols != 1 ? Math.floor(i / cols) * 2000 + (i % cols) * 400 : 500 * i), i);
+		for(var j = 0; j < $("#roadmap_graph .roadmap-row").length; j++)
+			setTimeout(function(j){
+				if (j == 0 || j == $("#roadmap_graph .roadmap-row").length - 1)
+					$("#roadmap_graph .roadmap-row-before-" + j).css("width", "calc(100% - 120px)");
+				else
+					$("#roadmap_graph .roadmap-row-before-" + j).css("width", "calc(100% - 240px)");
+				if (j == $("#roadmap_graph .roadmap-row").length - 1)
+					return;
+				setTimeout(function(j){
+					if (j % 2 == 0)
+						$(".roadmap-row-after-" + j + " .roadmap-row-after-circle").css("transform", "rotateZ(0deg)");
+					else
+						$(".roadmap-row-after-" + j + " .roadmap-row-after-circle").css("transform", "rotateZ(-180deg)");
+				}, 1200, j);
+			}, 2000 * j, j);
 	};
 
 	var scroll_processer = function(){
