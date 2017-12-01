@@ -234,9 +234,9 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 <div class="color-background"></div>
 <div class="home-content">
 	<h1 id="animate-txt1">Decentralized Marketplace For Global Data Network</h1>
-	<p>VN3T is : <span id="animate-txt2">a 2-way marketplace, a SaaS platform, an ecosystem of structured data, build on Cooperative GPU pooling, Build on Ethereum.</span></p>
-	<div class="home-icon"></div>
-	<div class="home-btn-div">PARTICIPATE NOW!</div>
+	<p>VN3T is ... <span id="animate-txt2" vals="a 2-way Marketplace,a SaaS Platform,an Ecosystem of Structured Data,a Distributed Economy,Made of Data,Built for AI,Build on Ethereum,Private and Safe,Fast & Scalable,Built on the Shoulders of Giants"></span></p>
+	<!--<div class="home-icon"></div>
+	<div class="home-btn-div">PARTICIPATE NOW!</div>-->
 </div>
 </section>
 <section id="problematic">
