@@ -129,6 +129,7 @@ $(window).bind("load", function () {
 			else{
 				$(".home-content p").show();
 				rewrite_ani_txt2();
+				rewrite_ani_txt3();
 				return;
 			}
 			if (org_ani_txt1.substring(0, new_ani_txt1.length) == new_ani_txt1)
@@ -192,6 +193,44 @@ $(window).bind("load", function () {
 					}
 				}
 				new_txt2 = tmp_txt2;
+			};
+			ani_text();
+		};
+
+		var ani_txt3_list = $("#animate-txt3").attr("vals").split(/,/);
+		var txt3_id = 0;
+		var txt3_len = 0;
+		var txt3_pp = true;
+		var rewrite_ani_txt3 = function(){
+			txt3_id = parseInt(Math.random() * 10);
+			if (txt3_id >= ani_txt3_list.length)
+				txt3_id = ani_txt3_list.length - 1;
+			var txt3 = ani_txt3_list[txt3_id];
+			function ani_text(){
+				if (txt3_pp)
+					txt3_len++;
+				else
+					txt3_len--;
+				
+				var new_txt3 = txt3.substring(0, txt3_len);
+
+				if (new_txt3 == txt3)
+				{
+					txt3_pp = false;
+					setTimeout(ani_text, 2000);
+				}
+				else if (new_txt3 == "" && !txt3_pp)
+				{
+					txt3_pp = true;
+					setTimeout(rewrite_ani_txt3, 50);
+				}
+				else
+				{
+					new_txt3 += "_";
+					setTimeout(ani_text, 50);
+				}
+
+				$("#animate-txt3").text(new_txt3);
 			};
 			ani_text();
 		};
