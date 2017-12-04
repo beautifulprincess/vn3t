@@ -233,9 +233,16 @@ Development of Training Materials", 'socials' => array('linkedin' => '#')),
 </div>-->
 <div class="color-background"></div>
 <div class="home-content">
-	<h1 id="animate-txt1">Decentralized Marketplace For Global Data Network</h1>
-	<p>VN3T is <span id="animate-txt2" vals="a 2-way Marketplace,a SaaS Platform,an Ecosystem of Structured Data,a Distributed Economy,Made of Data,Built for AI,Build on Ethereum,Private and Safe,Fast & Scalable,Built on the Shoulders of Giants"></span></p>
-	<!--<p class="align-center">VN3T is <span id="animate-txt3" vals="a 2-way Marketplace,a SaaS Platform,an Ecosystem of Structured Data,a Distributed Economy,Made of Data,Built for AI,Build on Ethereum,Private and Safe,Fast & Scalable,Built on the Shoulders of Giants"></span></p>-->
+	<h1 id="animate-txt1">
+		<span class="ani-txt1-sub ani-txt1-sub1">Decentralized</span>
+		<span class="ani-txt1-sub ani-txt1-sub2">Marketplace</span>
+		<span class="ani-txt1-sub ani-txt1-sub3">For</span>
+		<span class="ani-txt1-sub ani-txt1-sub4">Global</span>
+		<span class="ani-txt1-sub ani-txt1-sub5">Data</span>
+		<span class="ani-txt1-sub ani-txt1-sub6">Network</span>
+	</h1>
+	<p>VN3T is <span id="animate-txt2" vals="Built for AI,Structured Data,Built on Ethereum,A 2-way Marketplace,Data Economy,Open Source,A Distributed Economy,Built for Big Data,A SaaS Platform,Fast & Scalable,Safe & Secure,An Ecosystem,A Free Market"></span></p>
+	<!--<p class="align-center">VN3T is <span id="animate-txt3" vals="Built for AI,Structured Data,Built on Ethereum,A 2-way Marketplace,Data Economy,Open Source,A Distributed Economy,Built for Big Data,A SaaS Platform,Fast & Scalable,Safe & Secure,An Ecosystem,A Free Market"></span></p>-->
 	<!--<div class="home-icon"></div>
 	<div class="home-btn-div">PARTICIPATE NOW!</div>-->
 </div>

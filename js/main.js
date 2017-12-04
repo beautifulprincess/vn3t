@@ -119,17 +119,30 @@ $(window).bind("load", function () {
 			}
 			return dst;
 		};
-		var org_ani_txt1 = $("#animate-txt1").text();
+		var subno = 1;
+		var org_ani_txt1 = $(".ani-txt1-sub" + subno).text();
 		var new_ani_txt1 = init_ani_txt(org_ani_txt1);
+		$(".ani-txt1-sub" + subno).show();
 		var miss_cnt = 0;
 		var rewrite_ani_txt1 = function(){
-			$("#animate-txt1").text(new_ani_txt1);
+			$(".ani-txt1-sub" + subno).text(new_ani_txt1);
 			if (new_ani_txt1 != org_ani_txt1)
 				setTimeout(rewrite_ani_txt1, 20);
 			else{
-				$(".home-content p").show();
-				rewrite_ani_txt2();
-				rewrite_ani_txt3();
+				subno++;
+				if (subno < 7)
+				{
+					org_ani_txt1 = $(".ani-txt1-sub" + subno).text();
+					new_ani_txt1 = init_ani_txt(org_ani_txt1);
+					$(".ani-txt1-sub" + subno).show();
+					setTimeout(rewrite_ani_txt1, 20);
+				}
+				else
+				{
+					$(".home-content p").show();
+					rewrite_ani_txt2();
+					//rewrite_ani_txt3();
+				}
 				return;
 			}
 			if (org_ani_txt1.substring(0, new_ani_txt1.length) == new_ani_txt1)
@@ -157,10 +170,21 @@ $(window).bind("load", function () {
 		rewrite_ani_txt1();
 
 		var ani_txt2_list = $("#animate-txt2").attr("vals").split(/,/);
-		var txt2_id = 0;
+		var txt2_id = parseInt(Math.random() * 10);
+		var next_id = 0;
+		var n = parseInt(Math.random() * 10);
 		var rewrite_ani_txt2 = function(){
 			miss_cnt = 0;
-			txt2_id = parseInt(Math.random() * 10);
+			do{
+				next_id = (17 * (n + 1)) % (ani_txt2_list.length);
+				n++;
+
+				if (n == ani_txt2_list.length)
+					n = parseInt(Math.random() * 10);
+			} while (next_id == txt2_id);
+			txt2_id = next_id;
+
+			console.log(txt2_id);
 			if (txt2_id >= ani_txt2_list.length)
 				txt2_id = ani_txt2_list.length - 1;
 			var org_txt2 = ani_txt2_list[txt2_id];

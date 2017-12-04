@@ -212,9 +212,40 @@ header.onTop .navbar-toggler-right{
 #home h1{
 	text-transform: uppercase;
 	/*text-shadow: 1px 1px 2px rgba(220, 220, 220, 1);*/
-	height: 88px;
+	min-height: 88px;
 	color: #fff;
 	font-size: 44px;
+	position: relative;
+}
+#home h1 .ani-txt1-sub{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#home h1 .ani-txt1-sub1{
+	top: 0px;
+	left: 52px;
+}
+#home h1 .ani-txt1-sub2{
+	top: 0px;
+	left: 485px;
+}
+#home h1 .ani-txt1-sub3{
+	top: 48px;
+	left: 89px;
+}
+#home h1 .ani-txt1-sub4{
+	top: 48px;
+	left: 208px;
+}
+#home h1 .ani-txt1-sub5{
+	top: 48px;
+	left: 424px;
+}
+#home h1 .ani-txt1-sub6{
+	top: 48px;
+	left: 572px;
 }
 #home p{
 	color: #fff;/*#7599E7;*/
@@ -222,12 +253,15 @@ header.onTop .navbar-toggler-right{
 	margin-bottom: 50px;
 	letter-spacing: 3px;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-	height: 144px;
 }
 #home .home-content p{
 	display: none;
 	text-align: left;
-	padding-left: 115px;
+	margin: 0 auto;
+	padding: 10px;
+	width: 600px;
+	white-space: nowrap;
+	background: rgba(255, 255, 255, 0.2);
 }
 #home .home-content p.align-center{
 	padding-left: 0;
@@ -235,7 +269,7 @@ header.onTop .navbar-toggler-right{
 }
 #home p span{
 	font-size: 32px;
-	color: #fff;
+	color: #ddd;
 	white-space: nowrap;
 }
 #home .home-icon{
@@ -1367,6 +1401,11 @@ footer button:focus, footer button:active{
 	}
 	section#home{
 		height: auto;
+	}
+	#home h1 .ani-txt1-sub{
+		position: relative;
+		top: auto;
+		left: auto;
 	}
 	.blogs-news .news-col h1{
 		width: 100%;
