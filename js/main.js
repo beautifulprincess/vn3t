@@ -196,7 +196,7 @@ $(window).bind("load", function () {
 			};
 			ani_text();
 		};
-
+		/*
 		var ani_txt3_list = $("#animate-txt3").attr("vals").split(/,/);
 		var txt3_id = 0;
 		var txt3_len = 0;
@@ -234,6 +234,7 @@ $(window).bind("load", function () {
 			};
 			ani_text();
 		};
+		*/
 		/*var org_ani_txt2 = $("#animate-txt2").text();
 		var new_ani_txt2 = "";
 		var txt2_len = 0;
