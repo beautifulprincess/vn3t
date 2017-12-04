@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: codedeploy-aws/install_dependencies
+      timeout: 300
+      runas: root
+    - location: codedeploy-aws/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: codedeploy-aws/stop_server
+      timeout: 300
+      runas: root
+
