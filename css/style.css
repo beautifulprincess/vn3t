@@ -262,6 +262,7 @@ header.onTop .navbar-toggler-right{
 	width: 600px;
 	white-space: nowrap;
 	font-style: italic;
+	transition-duration: 0.3s;
 	/*background: rgba(255, 255, 255, 0.2);*/
 }
 #home .home-content p.align-center{

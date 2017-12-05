@@ -185,7 +185,6 @@ $(window).bind("load", function () {
 			} while (next_id == txt2_id);
 			txt2_id = next_id;
 
-			console.log(txt2_id);
 			if (txt2_id >= ani_txt2_list.length)
 				txt2_id = ani_txt2_list.length - 1;
 			var org_txt2 = ani_txt2_list[txt2_id];
