@@ -173,6 +173,7 @@ $(window).bind("load", function () {
 		var txt2_id = parseInt(Math.random() * 10);
 		var next_id = 0;
 		var n = parseInt(Math.random() * 10);
+		var txt2_width = [364, 450, 486, 536, 420, 394, 570, 476, 460, 444, 420, 416, 416, 600, 600, 600, 600];
 		var rewrite_ani_txt2 = function(){
 			miss_cnt = 0;
 			do{
@@ -189,6 +190,7 @@ $(window).bind("load", function () {
 				txt2_id = ani_txt2_list.length - 1;
 			var org_txt2 = ani_txt2_list[txt2_id];
 			var new_txt2 = init_ani_txt(org_txt2, true);
+			$("#home .home-content p").css("width", txt2_width[txt2_id] + "px");
 			function ani_text(){
 				$("#animate-txt2").text(new_txt2);
 				if (new_txt2 != org_txt2)

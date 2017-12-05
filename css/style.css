@@ -261,6 +261,7 @@ header.onTop .navbar-toggler-right{
 	padding: 10px;
 	width: 600px;
 	white-space: nowrap;
+	font-style: italic;
 	/*background: rgba(255, 255, 255, 0.2);*/
 }
 #home .home-content p.align-center{
